@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product-Landing</title>
+
+    <!------
+   FONT-AWASOME-LINK-CSS
+    ----->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!------
+ slick-css-LINK
+    ----->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <!------
+  Magnific-LINK
+    ----->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!------
+   GOOGLE-FONT-LINK
+    ----->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/css/inter-font.css" />
+    <!----custom css link-->
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!------js-all links------>
+    <!------
+  jquery-LINK
+    ----->
+
+    <script src="assets/js/lib/jquery3.6.0.min.js" defer></script>
+    <!------
+  counterup-LINK
+    ----->
+    <script src="assets/js/lib/jquery.counterup.min.js" defer></script>
+    <!------
+  waypoints-LINK
+    ----->
+    <script src="assets/js/lib/jquery.waypoints.js" defer></script>
+    <!------
+  fontawesome-LINK
+    ----->
+    <!------
+ slick-js-LINK
+    ----->
+    <script src="assets/js/lib/slick1.8.1.min.js" defer></script>
+    <!------
+  Magnific-js-LINK
+    ----->
+    <script src="assets/js/lib/jquery.magnific-popup.min.js" defer></script>
+    <!------
+ fontawasome-js-LINK
+    ----->
+    <script src="assets/js/lib/fontawesome.min.js" defer></script>
+    <!------
+ javascript-LINK
+    ----->
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body
+    class="overflow-x-hidden bg-no-repeat bg-[length:100%] bg-inherit font-inter"
+  >
+    <!----page-loder-html---------->
+    <div class="loader_bg z-[999999]">
+      <div class="loader"></div>
+    </div>
+    <nav
+      class="navbar py-6"
+      style="
+        background: linear-gradient(
+          90deg,
+          rgba(165, 246, 229, 1) 0%,
+          rgba(255, 255, 255, 1) 65%
+        );
+      "
+    >
+      <div class="content container mx-auto">
+        <div class="flex items-center justify-between w-full">
+          <div class="font-medium text-[25px] 2xl:text-[35px] text-black">
+            <a href="index.html" class="flex"> Jompha | UCFW </a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li
+              class="group transition delay-150 duration-300 ease-in-out relative dropdown text-purple-500 hover:text-purple-700 cursor-pointer"
+            >
+              <a href="blog.html">Blog</a>
+              <div
+                class="group-hover:block hover:transition-all dropdown-menu absolute hidden h-auto"
+              >
+                <ul class="top-0 md:w-48 w-32 h-[10px]">
+                  <li>
+                    <a
+                      class="rounded-t p-2 bg-gray-200 hover:bg-gray-400 block whitespace-no-wrap"
+                      href="blog-details.html"
+                      >One</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="bg-gray-200 p-2 hover:bg-gray-400 block whitespace-no-wrap"
+                      href="#"
+                      >Two</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="rounded-b p-2 bg-gray-200 hover:bg-gray-400 block whitespace-no-wrap"
+                      href="#"
+                      >Three</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li
+              class="group transition delay-150 duration-300 ease-in-out relative dropdown text-purple-500 hover:text-purple-700 cursor-pointer"
+            >
+              <a href="products.html">Products</a>
+              <div
+                class="group-hover:block hover:transition-all dropdown-menu absolute hidden h-auto"
+              >
+                <ul class="top-0 md:w-48 w-32 h-[10px]">
+                  <li>
+                    <a
+                      class="rounded-t p-2 bg-gray-200 hover:bg-gray-400 block whitespace-no-wrap"
+                      href="products-landing.html"
+                      >One</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="bg-gray-200 p-2 hover:bg-gray-400 block whitespace-no-wrap"
+                      href="#"
+                      >Two</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="rounded-b p-2 bg-gray-200 hover:bg-gray-400 block whitespace-no-wrap"
+                      href="#"
+                      >Three</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li>
+              <a
+                href="#"
+                class="block xl:hidden font-medium text-base 2xl:text-[25px] cursor-pointer rounded-full items-center gap-4 bg-[#48A400] 2xl:px-8 2xl:py-5 px-6 py-3 md:mr-4 max-w-[80%] mx-auto"
+              >
+                <svg
+                  class="inline"
+                  width="20"
+                  height="23"
+                  viewBox="0 0 20 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 23C2 23 0 23 0 21.0833C0 19.1667 2 13.4167 10 13.4167C18 13.4167 20 19.1667 20 21.0833C20 23 18 23 18 23H2ZM10 11.5C11.5913 11.5 13.1174 10.8942 14.2426 9.81586C15.3679 8.73753 16 7.27499 16 5.75C16 4.22501 15.3679 2.76247 14.2426 1.68414C13.1174 0.605802 11.5913 0 10 0C8.4087 0 6.88258 0.605802 5.75736 1.68414C4.63214 2.76247 4 4.22501 4 5.75C4 7.27499 4.63214 8.73753 5.75736 9.81586C6.88258 10.8942 8.4087 11.5 10 11.5Z"
+                    fill="white"
+                  />
+                </svg>
+                <span class="2xl:text-2xl text-white">Sign In</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block xl:hidden cursor-pointer font-medium text-base 2xl:text-[25px] rounded-full items-center gap-4 bg-[#DA0083] 2xl:px-8 2xl:py-5 px-6 py-3 max-w-[80%] mx-auto"
+              >
+                <span class="2xl:text-2xl text-white">Try For Free</span>
+              </a>
+            </li>
+          </ul>
+          <div class="flex justify-center items-end">
+            <a
+              href="#"
+              class="xl:block hidden font-medium text-base 2xl:text-[25px] cursor-pointer rounded-full items-center gap-4 bg-[#48A400] 2xl:px-8 2xl:py-5 px-6 py-3 md:mr-4 transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+            >
+              <svg
+                class="inline"
+                width="20"
+                height="23"
+                viewBox="0 0 20 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 23C2 23 0 23 0 21.0833C0 19.1667 2 13.4167 10 13.4167C18 13.4167 20 19.1667 20 21.0833C20 23 18 23 18 23H2ZM10 11.5C11.5913 11.5 13.1174 10.8942 14.2426 9.81586C15.3679 8.73753 16 7.27499 16 5.75C16 4.22501 15.3679 2.76247 14.2426 1.68414C13.1174 0.605802 11.5913 0 10 0C8.4087 0 6.88258 0.605802 5.75736 1.68414C4.63214 2.76247 4 4.22501 4 5.75C4 7.27499 4.63214 8.73753 5.75736 9.81586C6.88258 10.8942 8.4087 11.5 10 11.5Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="2xl:text-2xl text-white">Sign In</span>
+            </a>
+            <a
+              href="#"
+              class="xl:block hidden cursor-pointer font-medium text-base 2xl:text-[25px] rounded-full items-center gap-4 bg-[#DA0083] 2xl:px-8 2xl:py-5 px-6 py-3 transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+            >
+              <span class="2xl:text-2xl text-white">Try For Free</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="2xl:mb-32 mb-10 lg:mb-16 pt-20 md:pt-32 xl:px-0 px-5 md:px-9"
+    >
+      <div class="bg-no-repeat bg-[length:100%] bg-inherit">
+        <!---hero-section-->
+        <div class="text-center px-3 lg:px-0 py-10 2xl:py-20">
+          <h2
+            class="2xl:text-[35px] rounded-full text-[#48A400] p-3 max-w-[760px] mx-auto bg-[#ECFFDD] text-base md:text-xl md:text-[25px] font-medium mb-5"
+          >
+            Ultimate Coupons For Woocommerce
+          </h2>
+          <h1
+            class="2xl:text-[80px] lg:text-[60px] 2xl:max-w-[1350px] max-w-[1235px] mx-auto text-2xl md:text-4xl font-semibold lg:leading-[85px] 2xl:leading-[100px]"
+          >
+            The #1
+            <span class="relative"
+              >Plugins,
+              <img
+                class="inline absolute left-0 bottom-4 -z-[1]"
+                src="assets/img/heroLine.svg"
+                alt="text underline img"
+            /></span>
+            For Woocommerce Coupon Solution
+          </h1>
+        </div>
+
+        <!---video-popup-->
+
+        <section class="container mx-auto relative">
+          <img class="mx-auto" src="assets/img/Mask-group.jpg" alt="" />
+          <div
+            class="absolute p-2 bg-canvas rounded-[50%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <a
+              href="https://www.youtube.com/watch?v=8sOcElGlLlA"
+              class="vidplay flex justify-center lg:h-[50px] h-[40px] lg:w-[50px] w-[40px] items-center cursor-pointer"
+            >
+              <i
+                class="fas fa-play md:ml-[3px] text-[#DA0083] 2xl:text-[22px] text-lg"
+              ></i
+            ></a>
+          </div>
+        </section>
+      </div>
+    </header>
+    <!----product-section-->
+    <div class="text-center container mx-auto xl:px-0 px-5 md:px-9 pb-16">
+      <h1
+        class="font-semibold max-w-[927px] 2xl:leading-[109px] md:leading-[85px] mx-auto text-3xl md:text-4xl lg:text-[60px] 2xl:text-[80px] 2xl:pb-20 pb-8"
+      >
+        Our Hightailed Product Features
+      </h1>
+      <div
+        class="grid 2xl:mb-36 mb-10 lg:mb-20 md:grid-cols-2 lg:grid-cols-3 2xl:gap-8 gap-6 grid-cols-1 container mx-auto"
+      >
+        <!---1-->
+        <div
+          class="rounded-lg relative mx-auto w-full py-8 2xl:py-16"
+          style="
+            background: linear-gradient(
+              180deg,
+              #f7f2ff 0%,
+              rgba(247, 242, 255, 0) 100%
+            );
+          "
+        >
+          <div class="relative">
+            <svg
+              class="2xl:max-w-[168px] max-w-[120px] mx-auto"
+              class="mx-auto"
+              width="168"
+              height="148"
+              viewBox="0 0 168 148"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z"
+                fill="#EDE4FF"
+              />
+            </svg>
+            <img
+              class="absolute max-w-[45px] 2xl:max-w-[60px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              src="assets/img/Group-113.svg"
+              alt="sound-mike png/icon"
+            />
+          </div>
+
+          <h2 class="2xl:text-[35px] py-3 xl:py-5 text-[25px] font-medium">
+            Buy X Get X Offers
+          </h2>
+          <p
+            class="2xl:max-w-[365px] text-[#464646] max-w-[285px] text-[18px] 2xl:text-[20px] font-normal mx-auto"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging
+          </p>
+        </div>
+        <!---2-->
+        <div
+          class="rounded-lg relative mx-auto w-full py-8 2xl:py-16"
+          style="
+            background: linear-gradient(
+              360deg,
+              #ffeff7 0%,
+              rgba(255, 239, 247, 0) 100%
+            );
+          "
+        >
+          <div class="relative">
+            <svg
+              class="2xl:max-w-[168px] max-w-[120px] mx-auto"
+              width="168"
+              height="148"
+              viewBox="0 0 168 148"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z"
+                fill="#FFE4F1"
+              />
+            </svg>
+
+            <img
+              class="absolute max-w-[45px] 2xl:max-w-[60px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              src="assets/img/Group.svg"
+              alt="file icon-png"
+            />
+          </div>
+
+          <h2 class="2xl:text-[35px] py-3 xl:py-5 text-[25px] font-medium">
+            Conditions
+          </h2>
+          <p
+            class="2xl:max-w-[365px] text-[#464646] max-w-[285px] text-[18px] 2xl:text-[20px] font-normal mx-auto"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging
+          </p>
+        </div>
+        <!---3-->
+        <div
+          class="rounded-lg relative mx-auto w-full py-8 2xl:py-16"
+          style="
+            background: linear-gradient(
+              180deg,
+              #e9efff 0%,
+              rgba(233, 239, 255, 0) 100%
+            );
+          "
+        >
+          <div class="relative">
+            <svg
+              class="2xl:max-w-[168px] max-w-[120px] mx-auto"
+              width="168"
+              height="148"
+              viewBox="0 0 168 148"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z"
+                fill="#DDEAFF"
+              />
+            </svg>
+
+            <img
+              class="absolute max-w-[45px] 2xl:max-w-[60px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              src="assets/img/Group-2.svg"
+              alt="another file icon"
+            />
+          </div>
+
+          <h2 class="2xl:text-[35px] py-3 xl:py-5 md:text-[25px] font-medium">
+            Restrictions
+          </h2>
+          <p
+            class="2xl:max-w-[365px] text-[#464646] max-w-[285px] text-[18px] 2xl:text-[20px] font-normal mx-auto"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging
+          </p>
+        </div>
+        <!---4-->
+        <div
+          class="rounded-lg relative mx-auto w-full py-8 2xl:py-16"
+          style="
+            background: linear-gradient(
+              360deg,
+              #dff9ff 0%,
+              rgba(223, 249, 255, 0) 100%
+            );
+          "
+        >
+          <div class="relative">
+            <svg
+              class="2xl:max-w-[168px] max-w-[120px] mx-auto"
+              width="168"
+              height="148"
+              viewBox="0 0 168 148"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z"
+                fill="#CAF2FF"
+              />
+            </svg>
+
+            <img
+              class="absolute max-w-[45px] 2xl:max-w-[60px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              src="assets/img/Group-1.svg"
+              alt="contact icon/png"
+            />
+          </div>
+
+          <h2 class="2xl:text-[35px] py-3 xl:py-5 text-[25px] font-medium">
+            Referral System
+          </h2>
+          <p
+            class="2xl:max-w-[365px] text-[#464646] max-w-[285px] text-[18px] 2xl:text-[20px] font-normal mx-auto"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging
+          </p>
+        </div>
+        <!---5-->
+        <div
+          class="rounded-lg relative mx-auto w-full py-8 2xl:py-16"
+          style="
+            background: linear-gradient(
+              180deg,
+              #d1fefe 0%,
+              rgba(209, 254, 254, 0) 100%
+            );
+          "
+        >
+          <div class="relative">
+            <svg
+              class="2xl:max-w-[168px] max-w-[120px] mx-auto"
+              width="168"
+              height="148"
+              viewBox="0 0 168 148"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z"
+                fill="#9AFFFE"
+              />
+            </svg>
+            <img
+              class="absolute max-w-[45px] 2xl:max-w-[60px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              src="assets/img/Group-3.svg"
+              alt="download-icon-png"
+            />
+          </div>
+
+          <h2 class="2xl:text-[35px] py-3 xl:py-5 text-[25px] font-medium">
+            Coupon Templates
+          </h2>
+          <p
+            class="2xl:max-w-[365px] text-[#464646] max-w-[285px] text-[18px] 2xl:text-[20px] font-normal mx-auto"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging
+          </p>
+        </div>
+        <!---6-->
+        <div
+          class="rounded-lg relative mx-auto w-full py-8 2xl:py-16"
+          style="
+            background: linear-gradient(
+              360deg,
+              #deffe4 0%,
+              rgba(222, 255, 228, 0) 100%
+            );
+          "
+        >
+          <div class="relative">
+            <svg
+              class="2xl:max-w-[168px] max-w-[120px] mx-auto"
+              width="168"
+              height="148"
+              viewBox="0 0 168 148"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z"
+                fill="#B8FFC3"
+              />
+            </svg>
+
+            <img
+              class="absolute max-w-[45px] 2xl:max-w-[60px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              src="assets/img/Group-115.svg"
+              alt="price icon/png"
+            />
+          </div>
+
+          <h2 class="2xl:text-[35px] py-3 xl:py-5 text-[25px] font-medium">
+            Play To Win Coupon
+          </h2>
+          <p
+            class="2xl:max-w-[365px] text-[#464646] max-w-[285px] text-[18px] 2xl:text-[20px] font-normal mx-auto"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging
+          </p>
+        </div>
+        <!---7-->
+        <div
+          class="rounded-lg relative mx-auto w-full py-8 2xl:py-16"
+          style="
+            background: linear-gradient(
+              180deg,
+              #f3e8fe 0%,
+              rgba(243, 232, 254, 0) 100%
+            );
+          "
+        >
+          <div class="relative">
+            <svg
+              class="2xl:max-w-[168px] max-w-[120px] mx-auto"
+              width="168"
+              height="148"
+              viewBox="0 0 168 148"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z"
+                fill="#F3C7FF"
+              />
+            </svg>
+
+            <img
+              class="absolute max-w-[45px] 2xl:max-w-[60px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              src="assets/img/Group-5.svg"
+              alt="calender-icon/png"
+            />
+          </div>
+
+          <h2 class="2xl:text-[35px] py-3 xl:py-5 text-[25px] font-medium">
+            Coupon Scheduling
+          </h2>
+          <p
+            class="2xl:max-w-[365px] text-[#464646] max-w-[285px] text-[18px] 2xl:text-[20px] font-normal mx-auto"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging
+          </p>
+        </div>
+        <!----8-->
+        <div
+          class="rounded-lg relative mx-auto w-full py-8 2xl:py-16"
+          style="
+            background: linear-gradient(
+              360deg,
+              #fff1df 0%,
+              rgba(255, 241, 223, 0) 100%
+            );
+          "
+        >
+          <div class="relative">
+            <svg
+              class="2xl:max-w-[168px] max-w-[120px] mx-auto"
+              width="168"
+              height="148"
+              viewBox="0 0 168 148"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z"
+                fill="#FFDFBA"
+              />
+            </svg>
+
+            <img
+              class="absolute max-w-[45px] 2xl:max-w-[60px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              src="assets/img/Group-4.svg"
+              alt="percentage-icon/png"
+            />
+          </div>
+
+          <h2 class="2xl:text-[35px] py-3 xl:py-5 text-[25px] font-medium">
+            Maximum Discount
+          </h2>
+          <p
+            class="2xl:max-w-[365px] text-[#464646] max-w-[285px] text-[18px] 2xl:text-[20px] font-normal mx-auto"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging
+          </p>
+        </div>
+      </div>
+    </div>
+    <!------->
+    <section class="relative 2xl:pb-40 md:pb-28 pb-10">
+      <div
+        class="bg-full bg-center"
+        style="
+          background: linear-gradient(
+            262.6deg,
+            #001898 -38.57%,
+            #8f00ff 102.12%
+          );
+        "
+      >
+        <!---hero-section-->
+        <div
+          class="grid lg:grid-cols-2 py-10 md:py-[80px] 2xl:py-[90px] lg:px-[80px] 2xl:px-[190px] px-5 items-center"
+        >
+          <div class="2xl:max-w-[726px] max-w-[526px]">
+            <h2
+              class="font-semibold leading-[55px] xl:leading-[85px] 2xl:leading-[102px] text-white text-4xl lg:text-[45px] xl:text-[60px] 2xl:text-[80px]"
+            >
+              You can get help from youtube videos
+            </h2>
+            <button class="pt-5">
+              <a
+                href="https://www.youtube.com/watch?v=8sOcElGlLlA"
+                class="vidplay block text-lg lg:text-xl bg-canvas text-black mt-[15px] border font-normal cursor-pointer py-4 rounded-full px-8 z-[99] relative transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+              >
+                All Video
+                <i
+                  class="fa-regular fa-circle-play text-base text-[#7106E9]"
+                ></i>
+              </a>
+            </button>
+          </div>
+          <section class="container mx-auto relative z-[99] pt-5">
+            <img
+              class="mx-auto"
+              src="assets/img/thumbnail-1-1.svg"
+              alt="overlay-video-play-bg"
+            />
+            <div
+              class="absolute p-2 bg-canvas rounded-[50%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            >
+              <a
+                href="https://www.youtube.com/watch?v=8sOcElGlLlA"
+                class="vidplay flex justify-center lg:h-[50px] h-[40px] lg:w-[50px] w-[40px] items-center cursor-pointer"
+              >
+                <i
+                  class="fas fa-play md:ml-[3px] text-[#DA0083] 2xl:text-[22px] text-lg"
+                ></i
+              ></a>
+            </div>
+          </section>
+        </div>
+        <div
+          class="bg-no-repeat left-0 z-0 opacity-[.2] top-0 absolute lg:w-full h-full bg-contain"
+          style="background-image: url('assets/img/elements.png')"
+        ></div>
+      </div>
+
+      <div
+        class="bg-no-repeat z-50 -top-[60px] absolute w-full h-full 2xl:bg-[length:82%] bg-[length:90%] bg-[center_top_2rem] xl:bg-[center_top_0rem]"
+        style="background-image: url('assets/img/Group_289.png')"
+      ></div>
+    </section>
+    <!---Describe our Features-->
+    <article
+      class="md:grid xl:px-0 px-6 md:px-9 container mx-auto grid-cols-2 xl:grid-cols-[425px_minmax(900px,_1fr)_100px] 2xl:grid-cols-[600px_minmax(900px,_1fr)_100px] gap-8"
+    >
+      <div class="flex flex-col gap-y-8">
+        <div class="one">
+          <p
+            class="2xl:text-[80px] lg:text-[60px] leading-[55px] lg:leading-[80px] 2xl:leading-[90px] text-4xl font-semibold"
+          >
+            Describe our Features
+          </p>
+        </div>
+
+        <div class="two bg-[#F5F2FF] py-14 px-4 md:px-12">
+          <img
+            class="mb-[15px] xl:max-w-full lg:max-w-[100px] max-w-[80px]"
+            src="assets/img/Group-113.svg"
+            alt=""
+          />
+          <h2
+            class="2xl:text-[60px] md:text-[40px] text-4xl leading-[60px] 2xl:leading-[77px] lg:py-7 font-semibold"
+          >
+            Buy X Get X <br />
+            Offers
+          </h2>
+          <p
+            class="font-normal text-pTagColor text-base 2xl:text-xl leading-[33px] lg:max-w-[511px]"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging Provide a more personal touch to your customer in seconds
+            with video messaging
+          </p>
+          <div class="mt-[15px] leading-[33px] 2xl:text-[20px] text-pTagColor">
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]"
+                >Restrict User Roles.</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]">
+                Curious what to say? How to say it?</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]">
+                Whether you’re kicking off a new campaign.</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]"
+                >Habitasse per feugiat aliquam luctus accumsan curae
+              </span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]"
+                >Email is a crucial channel in any marketing.</span
+              >
+            </div>
+          </div>
+          <button>
+            <a
+              href="https://www.youtube.com/watch?v=8sOcElGlLlA"
+              class="vidplay block text-lg 2xl:text-xl text-[#48A400] hover:bg-[#48A400] border-solid border-[#48A400] hover:text-white mt-[15px] border font-normal cursor-pointer py-3 rounded-full px-6 transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+            >
+              See More
+              <i class="fa-regular fa-circle-play text-base"></i>
+            </a>
+          </button>
+        </div>
+
+        <div class="three bg-[#ECFBFF] py-14 px-4 md:px-12">
+          <img
+            class="mb-[15px] xl:max-w-full lg:max-w-[100px] max-w-[80px]"
+            src="assets/img/Group-1.svg"
+            alt=""
+          />
+          <h2
+            class="2xl:text-[60px] md:text-[40px] leading-[55px] lg:leading-[80px] 2xl:leading-[90px] text-4xl lg:py-7 font-semibold"
+          >
+            Referral System
+          </h2>
+          <p
+            class="font-normal text-pTagColor text-base 2xl:text-xl leading-[33px] lg:max-w-[511px]"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging Provide a more personal touch to your customer in seconds
+            with video messaging
+          </p>
+          <div class="mt-[15px] leading-[33px] 2xl:text-[20px] text-pTagColor">
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]">
+                Selected user roles that are available in WordPress.
+              </span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]">
+                Allow or Disallow User.</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]"
+                >Multiple payment methods.
+              </span>
+            </div>
+          </div>
+
+          <button>
+            <a
+              href="https://www.youtube.com/watch?v=8sOcElGlLlA"
+              class="vidplay block text-lg 2xl:text-xl border-[#DA0083] text-[#DA0083] hover:bg-[#DA0083] border-solid hover:text-white mt-[15px] border font-normal cursor-pointer py-3 rounded-full px-6 transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+            >
+              See More
+              <i class="fa-regular fa-circle-play text-base"></i>
+            </a>
+          </button>
+        </div>
+
+        <div class="three bg-[#EFFFF2] py-14 px-4 md:px-12">
+          <img
+            class="mb-[15px] xl:max-w-full lg:max-w-[100px] max-w-[80px]"
+            src="assets/img/Group-115.svg"
+            alt=""
+          />
+          <h2
+            class="2xl:text-[60px] md:text-[40px] text-4xl lg:py-7 font-semibold leading-[55px] lg:leading-[60px] 2xl:leading-[90px]"
+          >
+            Play To Win <br />
+            Coupon
+          </h2>
+          <p
+            class="font-normal text-pTagColor text-lg 2xl:text-xl leading-[33px] lg:max-w-[511px]"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging Provide.
+          </p>
+
+          <button>
+            <a
+              href="https://www.youtube.com/watch?v=8sOcElGlLlA"
+              class="vidplay block text-lg 2xl:text-xl text-[#48A400] hover:bg-[#48A400] border-solid border-[#48A400] hover:text-white mt-[15px] border font-normal cursor-pointer py-3 rounded-full px-6 transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+            >
+              See More
+              <i class="fa-regular fa-circle-play text-base"></i>
+            </a>
+          </button>
+        </div>
+
+        <div class="five bg-[#FFF3F0] py-14 px-4 md:px-12">
+          <img
+            class="mb-[15px] xl:max-w-full lg:max-w-[100px] max-w-[80px]"
+            src="assets/img/Group-4.svg"
+            alt=""
+          />
+          <h2
+            class="2xl:text-[60px] text-[40px] leading-[55px] lg:leading-[60px] 2xl:leading-[90px] lg:py-7 font-semibold"
+          >
+            Play To Win <br />
+            Coupon
+          </h2>
+          <p
+            class="font-normal text-pTagColor text-lg 2xl:text-xl leading-[33px] lg:max-w-[511px]"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging Provide a more personal touch to your customer in seconds
+            with video messaging
+          </p>
+
+          <button>
+            <a
+              href="https://www.youtube.com/watch?v=8sOcElGlLlA"
+              class="vidplay block text-lg 2xl:text-xl text-[#DA0083] hover:bg-[#DA0083] border-solid border-[#DA0083] hover:text-white mt-[15px] border font-normal cursor-pointer py-3 rounded-full px-6 transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+            >
+              See More
+              <i class="fa-regular fa-circle-play text-base"></i>
+            </a>
+          </button>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-y-8">
+        <div
+          class="six lg:max-w-[620px] 2xl:max-w-[635px] bg-[#FFF3F8] py-14 px-4 md:px-12"
+        >
+          <img
+            class="mb-[15px] xl:max-w-full lg:max-w-[100px] max-w-[80px]"
+            src="assets/img/Group.svg"
+            alt=""
+          />
+          <h2 class="2xl:text-[60px] text-[40px] lg:py-7 font-semibold">
+            Conditions
+          </h2>
+          <p
+            class="font-normal text-pTagColor text-base 2xl:text-xl leading-[33px] lg:max-w-[511px]"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging Provide a more personal touch to your customer in seconds
+            with video messaging
+          </p>
+          <div class="mt-[15px] leading-[33px] 2xl:text-[20px] text-pTagColor">
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]"
+                >Selected user roles that are available in WordPress.</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]">
+                Allow or Disallow User.</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]">
+                Multiple payment methods.</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]"
+                >Multiple shipping methods.
+              </span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]">
+                Disable the settings if you don’t want to use it.</span
+              >
+            </div>
+          </div>
+          <button>
+            <a
+              href="https://www.youtube.com/watch?v=8sOcElGlLlA"
+              class="vidplay block text-lg 2xl:text-xl text-[#DA0083] hover:bg-[#DA0083] border-solid border-[#DA0083] hover:text-white mt-[15px] border font-normal cursor-pointer py-3 rounded-full px-6 transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+            >
+              See More
+              <i class="fa-regular fa-circle-play text-base"></i>
+            </a>
+          </button>
+        </div>
+
+        <div
+          class="seven xl:max-w-[820px] 2xl:max-w-full bg-[#F1F6FF] py-14 px-4 md:px-12"
+        >
+          <img
+            class="mb-[15px] xl:max-w-full lg:max-w-[100px] max-w-[80px]"
+            src="assets/img/Group-2.svg"
+            alt=""
+          />
+          <h2
+            class="2xl:text-[60px] text-[40px] leading-[60px] 2xl:leading-[77px] lg:py-7 font-semibold"
+          >
+            Restrictions
+          </h2>
+          <p
+            class="font-normal text-base text-pTagColor 2xl:text-xl leading-[33px] 2xl:max-w-[729px]"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging Provide a more personal touch to your customer in seconds
+            with video messaging
+          </p>
+          <div class="mt-[15px] leading-[33px] 2xl:text-[20px] text-pTagColor">
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]"
+                >Selected user roles that are available in WordPress.</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]">
+                Allow or Disallow User.</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]">
+                Multiple payment methods.</span
+              >
+            </div>
+          </div>
+          <button>
+            <a
+              href="https://www.youtube.com/watch?v=8sOcElGlLlA"
+              class="vidplay block text-lg 2xl:text-xl text-[#48A400] hover:bg-[#48A400] border-solid border-[#48A400] hover:text-white mt-[15px] border font-normal cursor-pointer py-3 rounded-full px-6 transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+            >
+              See More
+              <i class="fa-regular fa-circle-play text-base"></i>
+            </a>
+          </button>
+        </div>
+
+        <div
+          class="eight lg:max-w-[620px] 2xl:max-w-[635px] bg-[#EDFFFF] py-14 px-4 md:px-12"
+        >
+          <img
+            class="mb-[15px] xl:max-w-full lg:max-w-[100px] max-w-[80px]"
+            src="assets/img/Group-3.svg"
+            alt=""
+          />
+          <h2
+            class="2xl:text-[60px] text-[40px] lg:text-[50px] leading-[60px] 2xl:leading-[77px] lg:py-7 font-semibold"
+          >
+            Coupon <br />
+            Templates
+          </h2>
+          <p
+            class="font-normal text-pTagColor text-base 2xl:text-xl leading-[33px] lg:max-w-[511px]"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging Provide a more personal touch to your customer in seconds
+            with video messaging
+          </p>
+
+          <button>
+            <a
+              href="https://www.youtube.com/watch?v=8sOcElGlLlA"
+              class="vidplay block text-lg 2xl:text-xl text-[#DA0083] hover:bg-[#DA0083] border-solid border-[#DA0083] hover:text-white mt-[15px] border font-normal cursor-pointer py-3 rounded-full px-6 transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+            >
+              See More
+              <i class="fa-regular fa-circle-play text-base"></i>
+            </a>
+          </button>
+        </div>
+
+        <div
+          class="seven max-w-[500px] xl:max-w-[820px] 2xl:max-w-full bg-[#F7EEFF] py-14 px-4 md:px-12"
+        >
+          <img
+            class="mb-[15px] xl:max-w-full lg:max-w-[100px] max-w-[80px]"
+            src="assets/img/Group-5.svg"
+            alt=""
+          />
+          <h2
+            class="2xl:text-[60px] text-[40px] leading-[60px] 2xl:leading-[77px] lg:py-7 font-semibold"
+          >
+            Coupon <br />
+            Scheduling
+          </h2>
+          <p
+            class="font-normal text-base text-pTagColor 2xl:text-xl leading-[33px] 2xl:max-w-[729px]"
+          >
+            Provide a more personal touch to your customer in seconds with video
+            messaging Provide a more personal touch to your customer in seconds
+            with video messaging
+          </p>
+          <div class="mt-[15px] leading-[33px] 2xl:text-[20px] text-pTagColor">
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]"
+                >Selected user roles that are available in WordPress.</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]">
+                Allow or Disallow User.</span
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 inline-block bg-black rounded-full"></span>
+              <span class="font-normal 2xl:text-[20px]">
+                Multiple payment methods.</span
+              >
+            </div>
+          </div>
+          <button>
+            <a
+              href="https://www.youtube.com/watch?v=8sOcElGlLlA"
+              class="vidplay block text-lg 2xl:text-xl text-[#48A400] hover:bg-[#48A400] border-solid border-[#48A400] hover:text-white mt-[15px] border font-normal cursor-pointer py-3 rounded-full px-6 transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+            >
+              See More
+              <i class="fa-regular fa-circle-play text-base"></i>
+            </a>
+          </button>
+        </div>
+      </div>
+    </article>
+    <!------pricing-table------->
+    <div class="container mx-auto xl:py-16 md:py-10 pt-10">
+      <h1
+        class="font-semibold max-w-[927px] 2xl:leading-[109px] xl:leading-[70px] leading-[60px] mx-auto text-4xl xl:text-[50px] 2xl:text-[80px] text-center"
+      >
+        Flexible Pricing <br />
+        Packages
+      </h1>
+      <div class="table-wrapper text-center">
+        <div
+          class="switch-wrapper relative inline-flex my-14 2xl:my-20 rounded-[50px] border border-solid border-[#48A400]"
+        >
+          <input id="monthly" type="radio" name="switch" checked />
+          <input id="yearly" type="radio" name="switch" />
+          <label
+            class="2xl:w-[250px] w-36 md:w-[200px] font-medium leading-[42px] text-[20px] 2xl:text-[30px] 2xl:p-5 p-2 cursor-pointer"
+            for="monthly"
+            >Yearly</label
+          >
+          <label
+            class="2xl:w-[250px] w-36 md:w-[200px] font-medium leading-[42px] text-[20px] 2xl:text-[30px] 2xl:p-5 p-2 cursor-pointer"
+            for="yearly"
+            >Lifetime</label
+          >
+          <span
+            class="highlighter absolute top-0 left-0 rounded-[50px] h-full 2xl:w-[250px] w-36 md:w-[200px] z-[-1] bg-[#48A400]"
+          ></span>
+        </div>
+        <table class="2xl:pt-10 border-separate flex justify-center">
+          <thead>
+            <tr
+              class="grid md:grid-cols-2 lg:grid-cols-3 items-center gap-6 xl:gap-10"
+            >
+              <th
+                class="bg-[#F1FFE7] w-[320px] md:w-[330px] lg:w-[302px] xl:w-[400px] 2xl:w-[480px] py-16 relative"
+              >
+                <p
+                  class="font-normal absolute left-0 text-lg 2xl:text-[25px] top-10 2xl:py-3 py-2 px-5 2xl:px-9 rounded-r-[50px] bg-[#C6FE9A] inline-block"
+                >
+                  50% Off
+                </p>
+                <p
+                  class="font-normal absolute right-0 text-lg 2xl:text-[25px] top-10 2xl:py-3 py-2 px-5 2xl:px-9 rounded-l-[50px] bg-[#C6FE9A] inline-block"
+                >
+                  Save $160
+                </p>
+
+                <img
+                  class="max-w-[120px] mx-auto mt-5"
+                  src="assets/img/image-31.png"
+                  alt=""
+                />
+
+                <div class="info">
+                  <div
+                    class="price monthly heading text-3xl 2xl:text-[40px] font-normal"
+                  >
+                    Single Site
+                  </div>
+                  <div
+                    class="heading price yearly hide text-3xl 2xl:text-[40px] font-normal"
+                  >
+                    Multiple Site
+                  </div>
+                  <div class="price monthly text-[#48A400]">
+                    <div class="amount font-normal">
+                      <p class="text-[80px] font-semibold">
+                        <span
+                          class="text-[30px] relative font-normal -right-[20px]"
+                          >$
+                        </span>
+                        10
+                        <span
+                          class="text-[30px] relative font-normal -left-[25px]"
+                          >/Year</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="price yearly text-[#48A400] hide">
+                    <div class="amount font-normal">
+                      <p class="2xl:text-[80px] text-[60px] font-semibold">
+                        <span
+                          class="2xl:text-[30px] text-xl relative font-normal 2xl:-right-[20px] -right-[15px]"
+                          >$
+                        </span>
+                        150
+                        <span
+                          class="2xl:text-[30px] text-xl relative font-normal 2xl:-left-[25px] -left-[15px]"
+                          >/Lifetime</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="pb-5">
+                    <ul
+                      class="price monthly font-normal text-xl 2xl:text-[25px] py-6 2xl:py-10"
+                    >
+                      <li><a href="#">1 Site License</a></li>
+                      <li class="py-5"><a href="#">1 Year Updates</a></li>
+                      <li><a href="#"> Priority Support</a></li>
+                    </ul>
+                    <ul
+                      class="price yearly hide font-normal text-xl 2xl:text-[25px] py-6 2xl:py-10"
+                    >
+                      <li><a href="#">5 Site License</a></li>
+                      <li class="py-4"><a href="#">3 Year Updates</a></li>
+                      <li><a href="#"> Priority Support Plus</a></li>
+                    </ul>
+                  </div>
+
+                  <button
+                    class="hover:bg-[#48A400] border border-solid text-[#48A400] border-[#48A400] font-medium text-xl 2xl:text-[30px] py-3 2xl:py-5 px-12 2xl:px-20 hover:text-white rounded-[50px] transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                    type="button"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </th>
+              <th
+                class="bg-[#FFF0F9] w-[320px] md:w-[330px] lg:w-[302px] xl:w-[400px] 2xl:w-[480px] py-16 relative"
+              >
+                <p
+                  class="font-normal absolute left-0 text-lg 2xl:text-[25px] top-10 2xl:py-3 py-2 px-5 2xl:px-9 rounded-r-[50px] bg-[#FFC9E9] inline-block"
+                >
+                  50% Off
+                </p>
+                <p
+                  class="font-normal absolute right-0 text-lg 2xl:text-[25px] top-10 2xl:py-3 py-2 px-5 2xl:px-9 rounded-l-[50px] bg-[#FFC9E9] inline-block"
+                >
+                  Save $160
+                </p>
+
+                <img
+                  class="max-w-[120px] mx-auto mt-5"
+                  src="assets/img/image-32.png"
+                  alt=""
+                />
+
+                <div class="info">
+                  <div
+                    class="price monthly heading text-3xl 2xl:text-[40px] font-normal"
+                  >
+                    Single Site
+                  </div>
+                  <div
+                    class="heading price yearly hide text-3xl 2xl:text-[40px] font-normal"
+                  >
+                    Multiple Site
+                  </div>
+                  <div class="price monthly text-[#DA0083]">
+                    <div class="amount font-normal">
+                      <p class="text-[80px] font-semibold">
+                        <span
+                          class="text-[30px] relative font-normal -right-[20px]"
+                          >$
+                        </span>
+                        10
+                        <span
+                          class="text-[30px] relative font-normal -left-[25px]"
+                          >/Year</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="price yearly text-[#DA0083] hide">
+                    <div class="amount font-normal">
+                      <p class="2xl:text-[80px] text-[60px] font-semibold">
+                        <span
+                          class="2xl:text-[30px] text-xl relative font-normal 2xl:-right-[20px] -right-[15px]"
+                          >$
+                        </span>
+                        150
+                        <span
+                          class="2xl:text-[30px] text-xl relative font-normal 2xl:-left-[25px] -left-[15px]"
+                          >/Lifetime</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="pb-5">
+                    <ul
+                      class="price monthly font-normal text-xl 2xl:text-[25px] py-6 2xl:py-10"
+                    >
+                      <li><a href="#">1 Site License</a></li>
+                      <li class="py-5"><a href="#">1 Year Updates</a></li>
+                      <li><a href="#"> Priority Support</a></li>
+                    </ul>
+                    <ul
+                      class="price yearly hide font-normal text-xl 2xl:text-[25px] py-6 2xl:py-10"
+                    >
+                      <li><a href="#">5 Site License</a></li>
+                      <li class="py-4"><a href="#">3 Year Updates</a></li>
+                      <li><a href="#"> Priority Support Plus</a></li>
+                    </ul>
+                  </div>
+
+                  <button
+                    class="hover:bg-[#DA0083] border border-solid text-[#DA0083] border-[#DA0083] font-medium text-xl 2xl:text-[30px] py-3 2xl:py-5 px-12 2xl:px-20 hover:text-white rounded-[50px] transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                    type="button"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </th>
+              <th
+                class="bg-[#F1FFE7] w-[320px] md:w-[330px] lg:w-[302px] xl:w-[400px] 2xl:w-[480px] py-16 relative"
+              >
+                <p
+                  class="font-normal absolute left-0 top-10 text-lg 2xl:text-[25px] 2xl:py-3 py-2 px-5 2xl:px-9 rounded-r-[50px] bg-[#C6FE9A] inline-block"
+                >
+                  50% Off
+                </p>
+                <p
+                  class="font-normal absolute right-0 text-lg 2xl:text-[25px] top-10 2xl:py-3 py-2 px-5 2xl:px-9 rounded-l-[50px] bg-[#C6FE9A] inline-block"
+                >
+                  Save $160
+                </p>
+
+                <img
+                  class="max-w-[120px] mx-auto mt-5"
+                  src="assets/img/image-33.png"
+                  alt=""
+                />
+
+                <div class="info">
+                  <div
+                    class="price monthly heading text-3xl 2xl:text-[40px] font-normal"
+                  >
+                    Single Site
+                  </div>
+                  <div
+                    class="heading price yearly hide text-3xl 2xl:text-[40px] font-normal"
+                  >
+                    Multiple Site
+                  </div>
+                  <div class="price monthly text-[#48A400]">
+                    <div class="amount font-normal">
+                      <p class="text-[80px] font-semibold">
+                        <span
+                          class="text-[30px] relative font-normal -right-[20px]"
+                          >$
+                        </span>
+                        10
+                        <span
+                          class="text-[30px] relative font-normal -left-[25px]"
+                          >/Year</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="price yearly text-[#48A400] hide">
+                    <div class="amount font-normal">
+                      <p class="2xl:text-[80px] text-[60px] font-semibold">
+                        <span
+                          class="2xl:text-[30px] text-xl relative font-normal 2xl:-right-[20px] -right-[15px]"
+                          >$
+                        </span>
+                        150
+                        <span
+                          class="2xl:text-[30px] text-xl relative font-normal 2xl:-left-[25px] -left-[15px]"
+                          >/Lifetime</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="pb-5">
+                    <ul
+                      class="price monthly font-normal text-xl 2xl:text-[25px] py-6 2xl:py-10"
+                    >
+                      <li><a href="#">1 Site License</a></li>
+                      <li class="py-5"><a href="#">1 Year Updates</a></li>
+                      <li><a href="#"> Priority Support</a></li>
+                    </ul>
+                    <ul
+                      class="price yearly hide font-normal text-xl 2xl:text-[25px] py-6 2xl:py-10"
+                    >
+                      <li><a href="#">5 Site License</a></li>
+                      <li class="py-4"><a href="#">3 Year Updates</a></li>
+                      <li><a href="#"> Priority Support Plus</a></li>
+                    </ul>
+                  </div>
+                  <button
+                    class="hover:bg-[#48A400] border border-solid text-[#48A400] border-[#48A400] font-medium text-xl 2xl:text-[30px] py-3 2xl:py-5 px-12 2xl:px-20 hover:text-white rounded-[50px] transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                    type="button"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <section
+      class="relative lg:pb-20 md:pb-10 items-center container mx-auto md:pt-0 pt-5"
+    >
+      <img
+        class="absolute w-20 md:w-[190px] xl:w-[250px] md:-top-[40px] lg:left-20 md:left-10 left-5"
+        src="assets/img/image-34.png"
+        alt="money-back-guarantee-img"
+      />
+
+      <div
+        class="font-semibold py-6 md:py-10 text-[#DA0083] px-6 lg:py-8 xl:py-16 lg:px-32 md:px-10 bg-[#FFF0F9] text-right text-base md:text-3xl lg:text-[35px] xl:text-[50px] 2xl:text-[60px]"
+      >
+        14 Days Money Back Guarantee!
+      </div>
+    </section>
+
+    <section
+      class="container grid 2xl:py-16 py-10 lg:grid-cols-2 xl:grid-cols-[380px_minmax(900px,_1fr)] 2xl:grid-cols-[610px_minmax(900px,_1fr)] mx-auto items-center"
+    >
+      <div class="xl:ml-0 lg:ml-[80px]">
+        <img
+          class="lg:mx-0 mx-auto lg:w-auto w-[100px]"
+          src="assets/img/m011t0438_a_intejjjjjrrogationkk_box_07sep22-1.png"
+          alt="question-img"
+        />
+        <h1
+          class="2xl:text-[60px] leading-[60px] 2xl:leading-[90px] text-center lg:text-left text-4xl font-bold 2xl:-mt-10 -mt-12"
+        >
+          Do you have Any <br />
+          Questions?
+        </h1>
+        <p
+          class="2xl:text-3xl text-center lg:text-left text-xl mb-5 font-normal 2xl:leading-[55px] 2xl:mt-10 mt-5"
+        >
+          We help you weather today's <br />
+          uncertainty through our best team.
+        </p>
+      </div>
+      <ul class="accordion relative xl:w-full w-[85%] mx-auto lg:mx-0">
+        <li class="accordion-item is-active mb-5">
+          <h3
+            class="new accordion-thumb transition-all delay-150 duration-150 xl:text-[30px] text-[13px] md:text-[16px] font-medium md:px-[25px] px-[15px] py-[15px] md:py-[20px] bg-canvas cursor-pointer"
+            style="box-shadow: 0px 31px 86px rgba(6, 0, 80, 0.07)"
+          >
+            How much does it cost to renew the license?
+          </h3>
+          <p
+            class="accordion-panel hidden px-6 py-4 xl:py-8 xl:pt-14 font-normal md:text-[16px] text-[14px] xl:text-[30px] xl:leading-[60px] leading-[30px] md:leading-[35px]]"
+          >
+            For yearly plans, your license needs to be renewed annually at the
+            same discounted price you purchased first year. For lifetime plans,
+            no renewal is required.
+          </p>
+        </li>
+
+        <li class="accordion-item mb-5">
+          <h3
+            class="new accordion-thumb transition-all delay-150 duration-150 xl:text-[30px] text-[13px] md:text-[16px] font-medium md:px-[25px] px-[15px] py-[15px] md:py-[20px] bg-canvas cursor-pointer"
+            style="box-shadow: 0px 31px 86px rgba(6, 0, 80, 0.07)"
+          >
+            Purchased first year For lifetime plans?
+          </h3>
+          <p
+            class="accordion-panel hidden px-6 py-4 xl:py-8 xl:pt-14 font-normal md:text-[16px] text-[14px] xl:text-[30px] xl:leading-[60px] leading-[30px] md:leading-[35px]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Reprehenderit quos, accusamus! Enim labore totam dicta quibusdam?
+            Eveniet quis asperiores reprehenderit eaque atque in iure voluptate,
+            explicabo, placeat, id earum architecto!
+          </p>
+        </li>
+
+        <li class="accordion-item mb-5">
+          <h3
+            class="new accordion-thumb transition-all delay-150 duration-150 xl:text-[30px] text-[13px] md:text-[16px] font-medium md:px-[25px] px-[15px] py-[15px] md:py-[20px] bg-canvas cursor-pointer"
+            style="box-shadow: 0px 31px 86px rgba(6, 0, 80, 0.07)"
+          >
+            Your license needs to be renewed annually <br />
+            at the same discounted?
+          </h3>
+          <p
+            class="accordion-panel hidden px-6 py-4 xl:py-8 xl:pt-14 font-normal md:text-[16px] text-[14px] xl:text-[30px] xl:leading-[60px] leading-[30px] md:leading-[35px]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Reprehenderit quos, accusamus! Enim labore totam dicta quibusdam?
+            Eveniet quis asperiores reprehenderit eaque atque in iure voluptate,
+            explicabo, placeat, id earum architecto!
+          </p>
+        </li>
+        <li class="accordion-item">
+          <h3
+            class="new accordion-thumb transition-all delay-150 duration-150 xl:text-[30px] text-[13px] md:text-[16px] font-medium md:px-[25px] px-[15px] py-[15px] md:py-[20px] bg-canvas cursor-pointer"
+            style="box-shadow: 0px 31px 86px rgba(6, 0, 80, 0.07)"
+          >
+            How much does it cost to renew the license?
+          </h3>
+          <p
+            class="accordion-panel hidden px-6 py-4 xl:py-8 xl:pt-14 font-normal md:text-[16px] text-[14px] xl:text-[30px] xl:leading-[60px] leading-[30px] md:leading-[35px]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Reprehenderit quos, accusamus! Enim labore totam dicta quibusdam?
+            Eveniet quis asperiores reprehenderit eaque atque in iure voluptate,
+            explicabo, placeat, id earum architecto!
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="relative container mx-auto lg:py-20 py-10">
+      <div
+        class="bg-full bg-center rounded-xl"
+        style="
+          background: linear-gradient(
+            264.83deg,
+            #ffeef8 -85.24%,
+            #ffffff 149.35%
+          );
+        "
+      >
+        <div
+          class="relative z-[99] grid md:grid-cols-[auto_auto] xl:grid-cols-[455px_minmax(900px,_1fr)] 2xl:grid-cols-[610px_minmax(900px,_1fr)] items-center py-10"
+        >
+          <div class="mx-auto">
+            <img
+              class="2xl:max-w-full md:max-w-[220px] max-w-[100px]"
+              src="assets/img/image-35.png"
+              alt="alarm bell"
+            />
+          </div>
+          <div class="text-center md:text-left">
+            <h1
+              class="2xl:text-[60px] md:text-left leading-[45px] lg:leading-[60px] 2xl:leading-[85px] text-center 2xl:max-w-full max-w-[430px] lg:max-w-[630px] text-3xl lg:text-[45px] font-semibold"
+            >
+              Grab the product now before the offer ends
+            </h1>
+            <a
+              href="#"
+              class="inline-block font-medium text-base 2xl:text-[25px] cursor-pointer rounded-full items-center gap-4 bg-[#DA0083] mt-5 lg:mt-10 2xl:px-14 2xl:py-5 px-6 py-3 md:mr-4 2xl:text-2xl text-white transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+            >
+              Grab Now
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-no-repeat z-50 overflow-hidden top-[50px] absolute w-full h-full bg-[length:82%]"
+        style="background-image: url('assets/img/Group-287.png')"
+      ></div>
+    </section>
+    <!----footer-->
+    <footer
+      class="bg-no-repeat 2xl:mt-10 bg-[#F7FFF1] relative bg-[length:100%] w-full h-fill bg-[center_top_0rem]"
+    >
+      <!----inner----->
+      <div
+        class="grid text-center md:text-left xl:px-0 px-10 2xl:grid-cols-[300px_300px_280px_270px_360px_minmax(900px,_1fr)_100px] container mx-auto pt-10 md:pt-20 2xl:pt-32 pb-10 sm:pb-20 xl:grid-cols-[280px_250px_230px_230px_290px_minmax(900px,_1fr)_100px] lg:grid-cols-[200px_200px_190px_160px_200px_minmax(900px,_1fr)_100px] md:grid-cols-3 lg:gap-0 gap-[30px]"
+      >
+        <div>
+          <h2 class="2xl:text-[35px] text-[25px] font-medium">UCFW Logo</h2>
+
+          <ul
+            class="2xl:text-[25px] text-lg xl:text-xl font-normal text-[#666666] pt-8 flex flex-col gap-y-3 2xl:gap-y-5"
+          >
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Benefits
+              </a>
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Features
+              </a>
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Use Cases</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >How it works</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Roadmap</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="2xl:text-[35px] text-[25px] font-medium">Support</h2>
+
+          <ul
+            class="2xl:text-[25px] text-lg xl:text-xl font-normal text-[#666666] pt-8 flex flex-col gap-y-3 2xl:gap-y-5"
+          >
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Documentations</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Support Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Support Center</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Refund Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="2xl:text-[35px] text-[25px] font-medium">Company</h2>
+
+          <ul
+            class="2xl:text-[25px] text-lg xl:text-xl font-normal text-[#666666] pt-8 flex flex-col gap-y-3 2xl:gap-y-5"
+          >
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Career</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Affiliate Program</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Testimonial</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="2xl:text-[35px] text-[25px] font-medium">Products</h2>
+
+          <ul
+            class="2xl:text-[25px] text-lg xl:text-xl font-normal text-[#666666] pt-8 flex flex-col gap-y-3 2xl:gap-y-5"
+          >
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >UCFW</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Order Timeline</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >Order Review</a
+              >
+            </li>
+            <li>
+              <a
+                class="transition-all duration-150 delay-150 hover:text-secoundary"
+                href="#"
+                >ORFW</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="2xl:text-[35px] text-[25px] font-medium">Subscribe</h2>
+          <p
+            class="2xl:max-w-[360px] 2xl:text-[25px] text-lg font-normal my-4 text-[#585858] leading-[45px]"
+          >
+            Subscribe to our email newsletter to receive updates.
+          </p>
+
+          <!---input--->
+
+          <form id="shipping-address-form">
+            <div class="field-wrapper">
+              <label
+                class="text-[#C5C2C2] my-[18px] bg-canvas whitespace-nowrap overflow-hidden text-[14px] xl:text-[16px] 2xl:text-[18px] absolute top-0 inline-block leading-[0] mx-[5px] py-[8px] px-[10px]"
+                for="firstName2"
+                >Email Address</label
+              >
+              <input
+                type="text"
+                name="firstName2"
+                value=""
+                id="firstName2"
+                class="text-field-input w-full md:p-[15px] p-[17px] max-w-full xl:max-w-[80%]"
+              />
+              <a
+                class="md:py-[13px] py-5 absolute top-0 text-lg 2xl:text-xl rounded-md px-4 flex justify-center items-center md:inline-block text-white bg-[#48A400] 2xl:left-[66%] left-[84%] xl:left-[63%] md:left-[77%] lg:left-[76%]"
+                href="#"
+              >
+                <i class="fa-solid fa-location-arrow"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr />
+      <div
+        class="text-center py-10 flex flex-col gap-y-5 md:gap-y-0 md:flex-row justify-between container mx-auto px-10 xl:px-0"
+      >
+        <div class="flex justify-center md:justify-start xl:gap-x-6 gap-x-4">
+          <a href="#">
+            <i
+              class="fab fa-facebook transition-all duration-150 delay-150 text-[#585858] hover:text-[#48A400] text-3xl"
+            ></i>
+          </a>
+
+          <a href="#">
+            <i
+              class="fab fa-twitter transition-all duration-150 delay-150 text-[#585858] text-3xl hover:text-[#48A400]"
+            ></i>
+          </a>
+          <a href="#">
+            <i
+              class="fab fa-instagram transition-all duration-150 delay-150 text-[#585858] text-3xl hover:text-[#48A400]"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fab fa-linkedin transition-all duration-150 delay-150 text-[#585858] text-3xl hover:text-[#48A400]"
+            ></i
+          ></a>
+        </div>
+        <div>
+          <p class="text-[#585858] 2xl:text-xl text-lg font-normal">
+            Copyright Jompha 2022 all right resarves
+          </p>
+        </div>
+        <!---scroll-TOP-BOTTOM-->
+        <div>
+          <a href="#" class="top sticky">
+            <i
+              class="fas fa-chevron-up w-[50px] h-[50px] xl:w-[65px] text-canvas 2xl:text-3xl text-lg xl:text-2xl flex justify-center items-center xl:h-[65px] bg-[#48A400] rounded-[50px] mx-auto md:mx-0"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

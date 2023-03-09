@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About-Us</title>
+
+    <!------
+   FONT-AWASOME-LINK-CSS
+    ----->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!------
+ slick-css-LINK
+    ----->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <!------
+   GOOGLE-FONT-LINK
+    ----->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/css/inter-font.css" />
+    <!----custom css link-->
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!------js-all links------>
+    <!------
+  jquery-LINK
+    ----->
+
+    <script src="assets/js/lib/jquery3.6.0.min.js" defer></script>
+    <!------
+  counterup-LINK
+    ----->
+    <script src="assets/js/lib/jquery.counterup.min.js" defer></script>
+    <!------
+  waypoints-LINK
+    ----->
+    <script src="assets/js/lib/jquery.waypoints.js" defer></script>
+
+    <!------
+ slick-js-LINK
+    ----->
+    <script src="assets/js/lib/slick1.8.1.min.js" defer></script>
+    <!------
+  Magnific-js-LINK
+    ----->
+    <script src="assets/js/lib/jquery.magnific-popup.min.js" defer></script>
+    <!------
+  fontawesome-LINK
+    ----->
+    <script src="assets/js/lib/fontawesome.min.js" defer></script>
+    <!------
+  JAVASCRIPT-LINK
+    ----->
+
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body
+    class="overflow-x-hidden font-inter bg-no-repeat bg-inherit"
+    style="background-image: url('./assets/img/backgroundFull.png')"
+  >
+    <!----page-loder-html---------->
+    <div class="loader_bg z-[999999]">
+      <div class="loader"></div>
+    </div>
+    <nav class="navbar">
+      <div class="content container mx-auto">
+        <div class="flex items-center justify-between w-full">
+          <div class="logo">
+            <a href="#"
+              ><img class="w-[180px]" src="assets/img/uu.png" alt="header-logo"
+            /></a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li
+              class="group transition delay-150 duration-300 ease-in-out relative dropdown text-purple-500 hover:text-purple-700 cursor-pointer"
+            >
+              <a href="blog.html">Blog</a>
+              <div
+                class="group-hover:block hover:transition-all dropdown-menu absolute hidden h-auto"
+              >
+                <ul class="top-0 md:w-48 w-32 h-[10px]">
+                  <li>
+                    <a
+                      class="rounded-t p-2 bg-gray-200 hover:bg-gray-400 block whitespace-no-wrap"
+                      href="blog-details.html"
+                      >One</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="bg-gray-200 p-2 hover:bg-gray-400 block whitespace-no-wrap"
+                      href="#"
+                      >Two</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="rounded-b p-2 bg-gray-200 hover:bg-gray-400 block whitespace-no-wrap"
+                      href="#"
+                      >Three</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li
+              class="group transition delay-150 duration-300 ease-in-out relative dropdown text-purple-500 hover:text-purple-700 cursor-pointer"
+            >
+              <a href="products.html">Products</a>
+              <div
+                class="group-hover:block hover:transition-all dropdown-menu absolute hidden h-auto"
+              >
+                <ul class="top-0 md:w-48 w-32 h-[10px]">
+                  <li>
+                    <a
+                      class="rounded-t p-2 bg-gray-200 hover:bg-gray-400 block whitespace-no-wrap"
+                      href="products-landing.html"
+                      >One</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="bg-gray-200 p-2 hover:bg-gray-400 block whitespace-no-wrap"
+                      href="#"
+                      >Two</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="rounded-b p-2 bg-gray-200 hover:bg-gray-400 block whitespace-no-wrap"
+                      href="#"
+                      >Three</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li>
+              <a
+                href="#"
+                class="block xl:hidden rounded-xl items-center gap-4 bg-secoundary 2xl:px-10 2xl:py-6 px-6 py-4 max-w-[80%] mx-auto"
+              >
+                <i class="fas fa-user text-canvas text-xl"></i>
+                <span
+                  class="2xl:text-[25px] text-xl text-canvas inline-block font-medium"
+                  >Login Here</span
+                >
+              </a>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="xl:block hidden rounded-xl items-center gap-4 bg-secoundary 2xl:px-10 2xl:py-6 px-6 py-4 transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300"
+          >
+            <i class="fas fa-user text-canvas text-xl"></i>
+            <span
+              class="2xl:text-[25px] text-xl text-canvas inline-block font-medium"
+              >Login Here</span
+            >
+          </a>
+        </div>
+
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="2xl:pt-14 pt-6 bg-no-repeat bg-inherit"
+      style="background-image: url('assets/img/Rectangle-93.png')"
+    >
+      <div
+        class="bg-no-repeat bg-[length:100%] bg-inherit"
+        style="background-image: url('assets/img/elements.png')"
+      >
+        <!---hero-section-->
+        <div class="text-center w-full">
+          <h1
+            class="2xl:text-[80px] px-4 md:px-0 xl:text-[60px] md:text-[40px] text-xl md:pt-28 pt-20 2xl:max-w-[1207px] max-w-[580px] xl:max-w-[880px] mx-auto font-semibold 2xl:leading-[100px] md:leading-[60px] leading-[50px] xl:leading-[80px] py-12 lg:pb-20 2xl:pb-32"
+          >
+            Creating Innovative Software To Foster eCommerce Businesses.
+          </h1>
+        </div>
+      </div>
+    </header>
+    <!----A Brief History---->
+
+    <section
+      class="grid xl:gap-10 px-5 md:px-10 xl:px-0 lg:grid-cols-2 container lg:py-20 py-10 2xl:py-36 mx-auto items-center"
+    >
+      <div class="max-w-[635px] mx-5 lg:mx-0 md:mx-auto">
+        <h1
+          class="2xl:text-6xl text-center lg:text-left text-3xl font-semibold 2xl:pb-10 pb-4"
+        >
+          A Brief History
+        </h1>
+        <p
+          class="font-normal text-center md:text-left leading-[45px] text-base 2xl:text-[20px] text-pTagColor max-w-[40rem]"
+        >
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout.
+        </p>
+        <p
+          class="2xl:py-10 text-center md:text-left text-pTagColor py-5 font-normal leading-[45px] text-base 2xl:text-[20px]"
+        >
+          The point of using Lorem Ipsum is that it has a more-or-less normal
+          distribution of letters, as opposed to using 'Content here, content
+          here making it look like readable english
+        </p>
+        <div class="flex items-center gap-3">
+          <span class="w-2 h-2 inline-block bg-black rounded-full"></span>
+          <span class="font-normal text-lg md:text-[25px]"
+            >High Quality Products</span
+          >
+        </div>
+        <div class="flex items-center gap-3 my-5">
+          <span class="w-2 h-2 inline-block bg-black rounded-full"></span>
+          <span class="font-normal text-lg md:text-[25px]"
+            >Scalable Applications
+          </span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="w-2 h-2 inline-block bg-black rounded-full"></span>
+          <span class="font-normal text-lg md:text-[25px]"
+            >Robust Features</span
+          >
+        </div>
+      </div>
+      <div class="overflow-hidden bg-cover pt-10 lg:pt-0">
+        <img src="assets/img/Group-43.png" alt="" />
+      </div>
+    </section>
+    <!----Our-Strang-Team---->
+    <section>
+      <div class="text-center w-full">
+        <h1 class="2xl:text-6xl text-3xl lg:pb-20 pb-10 font-semibold">
+          Our Strang Team
+        </h1>
+      </div>
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 xl:mb-20 gap-5 lg:gap-10 container mx-auto px-5 md:px-10 xl:px-0"
+      >
+        <!----->
+        <div
+          class="xl:p-10 p-5 flex justify-center bg-no-repeat bg-inherit"
+          style="background-image: url('assets/img/Rectangle-94.png')"
+        >
+          <div
+            class="relative text-center flex flex-col justify-center items-center"
+          >
+            <div
+              class="animate-spin top-0 2xl:w-[320px] h-[180px] w-[180px] xl:w-[250px] xl:h-[250px] 2xl:h-[320px] absolute rounded-[50%] shadow-[1px_2px_1px_rgba(253,154,32,1)]"
+            ></div>
+
+            <img
+              class="rounded-full max-w-[180px] xl:max-w-[250px] 2xl:max-w-[320px]"
+              src="assets/img/Ellipse-41.png"
+              alt="boy-img"
+            />
+            <h2
+              class="2xl:text-[40px] md:text-[30px] text-2xl pt-5 xl:pt-10 font-semibold"
+            >
+              Tawsif Khan
+            </h2>
+            <p
+              class="2xl:text-[25px] text-[20px] py-5 font-normal text-[#838383]"
+            >
+              Graphic Designer
+            </p>
+            <div
+              class="flex justify-center md:justify-start 2xl:gap-x-6 gap-x-4"
+            >
+              <a href="#">
+                <i
+                  class="fab fa-facebook text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i>
+              </a>
+
+              <a href="#">
+                <i
+                  class="fab fa-twitter text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i>
+              </a>
+
+              <a href="#"
+                ><i
+                  class="fab fa-linkedin text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!----->
+        <div
+          class="xl:p-10 p-5 flex justify-center bg-no-repeat bg-inherit"
+          style="background-image: url('assets/img/Rectangle-95.png')"
+        >
+          <div
+            class="relative text-center flex flex-col justify-center items-center"
+          >
+            <div
+              class="animate-spin top-0 2xl:w-[320px] h-[180px] w-[180px] xl:w-[250px] xl:h-[250px] 2xl:h-[320px] absolute rounded-[50%] shadow-[1px_2px_1px_rgba(84,59,245,1)]"
+            ></div>
+
+            <img
+              class="rounded-full max-w-[180px] xl:max-w-[250px] 2xl:max-w-[320px]"
+              src="assets/img/Ellipse-42.png"
+              alt="boy-img"
+            />
+            <h2
+              class="2xl:text-[40px] md:text-[30px] text-2xl pt-5 xl:pt-10 font-semibold"
+            >
+              Tawsif Khan
+            </h2>
+            <p
+              class="2xl:text-[25px] text-[20px] py-5 font-normal text-[#838383]"
+            >
+              Graphic Designer
+            </p>
+            <div
+              class="flex justify-center md:justify-start 2xl:gap-x-6 gap-x-4"
+            >
+              <a href="#">
+                <i
+                  class="fab fa-facebook text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i>
+              </a>
+
+              <a href="#">
+                <i
+                  class="fab fa-twitter text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i>
+              </a>
+
+              <a href="#"
+                ><i
+                  class="fab fa-linkedin text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!----->
+        <div
+          class="xl:p-10 p-5 flex justify-center bg-no-repeat bg-inherit"
+          style="background-image: url('assets/img/Rectangle-96.png')"
+        >
+          <div
+            class="relative text-center flex flex-col justify-center items-center"
+          >
+            <div
+              class="animate-spin 2xl:w-[320px] h-[180px] w-[180px] xl:w-[250px] xl:h-[250px] 2xl:h-[320px] top-0 absolute rounded-[50%] shadow-[1px_2px_1px_rgba(0,240,255,1)]"
+            ></div>
+
+            <img
+              class="rounded-full max-w-[180px] xl:max-w-[250px] 2xl:max-w-[320px]"
+              src="assets/img/Ellipse-43.png"
+              alt="boy-img"
+            />
+            <h2
+              class="2xl:text-[40px] md:text-[30px] text-2xl pt-5 xl:pt-10 font-semibold"
+            >
+              Tawsif Khan
+            </h2>
+            <p
+              class="2xl:text-[25px] text-[20px] py-5 font-normal text-[#838383]"
+            >
+              Graphic Designer
+            </p>
+            <div
+              class="flex justify-center md:justify-start 2xl:gap-x-6 gap-x-4"
+            >
+              <a href="#">
+                <i
+                  class="fab fa-facebook text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i>
+              </a>
+
+              <a href="#">
+                <i
+                  class="fab fa-twitter text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i>
+              </a>
+
+              <a href="#"
+                ><i
+                  class="fab fa-linkedin text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!----->
+        <div
+          class="xl:p-10 p-5 flex justify-center bg-no-repeat bg-inherit"
+          style="background-image: url('assets/img/Rectangle-997.png')"
+        >
+          <div
+            class="relative text-center flex flex-col justify-center items-center"
+          >
+            <div
+              class="animate-spin 2xl:w-[320px] h-[180px] w-[180px] xl:w-[250px] xl:h-[250px] 2xl:h-[320px] top-0 absolute rounded-[50%] shadow-[1px_2px_1px_rgba(0,163,255,1)]"
+            ></div>
+
+            <img
+              class="rounded-full max-w-[180px] xl:max-w-[250px] 2xl:max-w-[320px]"
+              src="assets/img/Ellipse-44.png"
+              alt="boy-img"
+            />
+            <h2
+              class="2xl:text-[40px] md:text-[30px] text-2xl pt-5 xl:pt-10 font-semibold"
+            >
+              Tawsif Khan
+            </h2>
+            <p
+              class="2xl:text-[25px] text-[20px] py-5 font-normal text-[#838383]"
+            >
+              Graphic Designer
+            </p>
+            <div
+              class="flex justify-center md:justify-start 2xl:gap-x-6 gap-x-4"
+            >
+              <a href="#">
+                <i
+                  class="fab fa-facebook text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i>
+              </a>
+
+              <a href="#">
+                <i
+                  class="fab fa-twitter text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i>
+              </a>
+
+              <a href="#"
+                ><i
+                  class="fab fa-linkedin text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!----->
+        <div
+          class="xl:p-10 p-5 flex justify-center bg-no-repeat bg-inherit"
+          style="background-image: url('assets/img/Rectangle-98.png')"
+        >
+          <div
+            class="relative text-center flex flex-col justify-center items-center"
+          >
+            <div
+              class="animate-spin 2xl:w-[320px] h-[180px] w-[180px] xl:w-[250px] xl:h-[250px] 2xl:h-[320px] top-0 absolute rounded-[50%] shadow-[1px_2px_1px_rgba(52,202,0,1)]"
+            ></div>
+
+            <img
+              class="rounded-full max-w-[180px] xl:max-w-[250px] 2xl:max-w-[320px]"
+              src="assets/img/Ellipse-45.png"
+              alt="boy-img"
+            />
+            <h2
+              class="2xl:text-[40px] md:text-[30px] text-2xl pt-5 xl:pt-10 font-semibold"
+            >
+              Tawsif Khan
+            </h2>
+            <p
+              class="2xl:text-[25px] text-[20px] py-5 font-normal text-[#838383]"
+            >
+              Graphic Designer
+            </p>
+            <div
+              class="flex justify-center md:justify-start 2xl:gap-x-6 gap-x-4"
+            >
+              <a href="#">
+                <i
+                  class="fab fa-facebook text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i>
+              </a>
+
+              <a href="#">
+                <i
+                  class="fab fa-twitter text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i>
+              </a>
+
+              <a href="#"
+                ><i
+                  class="fab fa-linkedin text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300 hover:text-secoundary"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---Are You Interested To Join Our Team-->
+    <section class="relative 2xl:pb-40 lg:pb-28 pb-10">
+      <!---COMEDOWN Products-->
+      <div
+        class="lg:grid-cols-4 px-5 md:px-10 lg:px-0 md:grid-cols-2 max-w-[50rem] xl:max-w-[69rem] grid container mx-auto text-center relative z-[99] top-[25px]"
+        style="box-shadow: 0px 78px 116px rgba(0, 0, 0, 0.04)"
+      >
+        <div
+          class="xl:w-[282px] py-6 lg:py-0 lg:w-[200px] lg:mx-auto lg:h-[200px] xl:h-[297px] flex flex-col justify-center items-center"
+          style="background-image: url('./assets/img/Rectangle-56.jpg')"
+        >
+          <img
+            class="inline-block animate-bounce bg-canvas p-[10px] xl:p-[15px] rounded-[50px] w-[60px] xl:w-[90px] 2xl:w-auto -mt-[10px]"
+            src="assets/img/gift-box.svg"
+            alt="gift-box-icon"
+            srcset=""
+            style="box-shadow: 0px 9px 25px rgba(79, 202, 255, 0.16)"
+          />
+          <div
+            class="flex -mt-[10px] xl:-mt-0 justify-center items-center font-bold text-4xl xl:text-[50px]"
+          >
+            <h1 class="counter">5</h1>
+            <span>+</span>
+          </div>
+          <p class="xl:text-xl text-lg font-normal mt-2 lg:mt-5 text-[#606060]">
+            Browse Products
+          </p>
+        </div>
+        <div
+          class="xl:w-[282px] py-6 lg:py-0 lg:w-[200px] lg:mx-auto lg:h-[200px] xl:h-[297px] flex flex-col justify-center items-center bg-canvas"
+        >
+          <img
+            class="inline-block animate-bounce bg-canvas p-[10px] xl:p-[15px] rounded-[50px] w-[60px] xl:w-[90px] 2xl:w-auto -mt-[10px]"
+            src="assets/img/smiley-face.svg"
+            alt="smile-face-icon"
+            srcset=""
+            style="box-shadow: 0px 9px 25px rgba(255, 151, 54, 0.15)"
+          />
+          <div
+            class="flex -mt-[10px] xl:-mt-0 justify-center items-center font-bold text-4xl xl:text-[50px]"
+          >
+            <h1 class="counter">300</h1>
+            <span>+</span>
+          </div>
+
+          <p class="xl:text-xl text-lg font-normal mt-2 lg:mt-5 text-[#606060]">
+            Happy Customers
+          </p>
+        </div>
+        <div
+          class="xl:w-[282px] py-6 lg:py-0 lg:w-[200px] lg:mx-auto lg:h-[200px] xl:h-[297px] flex flex-col justify-center items-center"
+          style="background-image: url('./assets/img/Rectangle-57.jpg')"
+        >
+          <img
+            class="inline-block animate-bounce bg-canvas p-[10px] xl:p-[15px] rounded-[50px] w-[60px] xl:w-[90px] 2xl:w-auto -mt-[10px]"
+            src="assets/img/contact-plural.svg"
+            alt="contact-plural"
+            srcset=""
+            style="box-shadow: 0px 9px 25px rgba(125, 64, 255, 0.14)"
+          />
+
+          <div
+            class="flex -mt-[10px] xl:-mt-0 justify-center items-center font-bold text-4xl xl:text-[50px]"
+          >
+            <h1 class="counter">10</h1>
+            <span>+</span>
+          </div>
+          <p class="xl:text-xl text-lg mt-2 lg:mt-5 font-normal text-[#606060]">
+            Happy Customers
+          </p>
+        </div>
+        <div
+          class="xl:w-[282px] py-6 lg:py-0 lg:w-[200px] lg:mx-auto lg:h-[200px] xl:h-[297px] flex flex-col justify-center items-center bg-canvas"
+        >
+          <img
+            class="inline-block animate-bounce bg-canvas p-[10px] xl:p-[15px] rounded-[50px] w-[60px] xl:w-[90px] 2xl:w-auto -mt-[10px]"
+            src="assets/img/yes-icon.svg"
+            alt="yes-icon"
+            srcset=""
+            style="box-shadow: 0px 9px 25px rgba(255, 71, 93, 0.13)"
+          />
+          <div
+            class="flex -mt-[10px] xl:-mt-0 justify-center items-center font-bold text-4xl xl:text-[50px]"
+          >
+            <h1 class="counter">4</h1>
+            <span>+</span>
+          </div>
+          <p class="xl:text-xl text-lg mt-2 lg:mt-5 font-normal text-[#606060]">
+            Happy Customers
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="bg-no-repeat z-50 top-0 absolute w-full h-full bg-[length:85%] 2xl:bg-[center_top_24rem] xl:bg-[center_top_20rem] bg-[center_top_45rem] lg:bg-[center_top_18rem] md:bg-[center_top_25rem]"
+        style="background-image: url('assets/img/elementsTwo.png')"
+      ></div>
+      <section class="relative">
+        <div class="lg:-top-8 bg-[#F8FBFF]">
+          <div
+            class="bg-full bg-center"
+            style="
+              background: linear-gradient(
+                263.02deg,
+                #231fd7 -1.15%,
+                #8776f5 102.12%
+              );
+            "
+          >
+            <!---hero-section-->
+            <div>
+              <section class="container mx-auto relative z-[99] py-10 xl:py-20">
+                <div class="relative z-50">
+                  <h1
+                    class="2xl:text-[80px] pt-10 text-center md:text-[40px] md:max-w-[482px] max-w-[350px] 2xl:max-w-[882px] mx-auto text-xl md:pb-10 pb-5 text-white font-semibold leading-[45px] lg:leading-[60px] 2xl:leading-[90px]"
+                  >
+                    Are You Interested To Join Our Team?
+                  </h1>
+                  <a
+                    href="#"
+                    class="flex cursor-pointer mx-auto max-w-[180px] 2xl:max-w-[281px] justify-center items-center rounded-xl gap-4 bg-[#FFCD33] 2xl:py-6 py-4 transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                  >
+                    <span class="2xl:text-[25px] text-black">Drop Your CV</span>
+                  </a>
+                </div>
+              </section>
+            </div>
+            <div
+              class="bg-no-repeat left-0 z-0 opacity-[.2] top-0 absolute lg:w-full h-full bg-cover"
+              style="background-image: url('assets/img/Rectangle-99.png')"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!---Our Next Project Goal-->
+    <section
+      class="md:grid 2xl:pb-20 px-5 md:px-10 xl:px-0 pb-10 xl:gap-32 gap-20 lg:grid-cols-2 overflow-hidden container mx-auto"
+    >
+      <div
+        class="flex lg:max-w-full max-w-[70%] mx-auto mb-10 md:mb-0 justify-center items-center"
+      >
+        <img src="assets/img/Group-49.png" alt="" />
+      </div>
+      <div class="text-center md:text-left">
+        <h1 class="2xl:text-6xl text-3xl pb-6 2xl:pb-10 font-semibold">
+          Our Next Project Goal
+        </h1>
+        <p
+          class="lg:max-w-[655px] 2xl:text-[20px] text-lg font-normal text-pTagColor leading-[40px]"
+        >
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. lorem ipsam The
+          point of using Lorem Ipsum is that it has a more-or-less normal
+          <span class="2xl:pt-7 pt-5 inline-block"
+            >Distribution of letters, as opposed to using 'Content here, content
+            here making it look like readable English.</span
+          >
+        </p>
+        <div
+          class="timeline ml-[54px] md:ml-[65px] overflow-visible 2xl:mt-20 mt-10"
+        >
+          <div
+            class="entry before:absolute before:h-[96%] before:block before:border before:border-solid before:border-secoundary before:-left-[19%] before:top-[15px] after:absolute after:block after:w-[50px] after:h-[2px] after:bg-secoundary after:top-[15px] after:-left-[19%]"
+          >
+            <div
+              class="core before:absolute before:h-[0%] before:block before:border-r-transparent before:border-b-transparent before:border-t-transparent before:border-l-secoundary before:border-solid before:-left-[10px] md:before:-left-[17px] before:top-[10px] before:border-t-[6px] before:border-r-[0px] before:border-b-[6px] before:border-l-[10px]"
+            >
+              <div class="-mt-3 lg:ml-[35px] md:ml-[20px]">
+                <h2 class="text-[25px] font-medium mb-2">Project goal Name</h2>
+                <p
+                  class="max-w-[300px] pb-12 2xl:pb-16 leading-[40px] text-pTagColor 2xl:text-[20px] text-lg"
+                >
+                  It is a long established fact that a reader will be distracted
+                  by the readable
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="entry before:absolute before:h-[96%] before:block before:border before:border-solid before:border-secoundary before:-left-[19%] before:top-[15px] after:absolute after:block after:w-[50px] after:h-[2px] after:bg-secoundary after:top-[15px] after:-left-[19%]"
+          >
+            <div
+              class="core before:absolute before:h-[0%] before:block before:border-r-transparent before:border-b-transparent before:border-t-transparent before:border-l-secoundary before:border-solid before:-left-[10px] md:before:-left-[17px] before:top-[10px] before:border-t-[6px] before:border-r-[0px] before:border-b-[6px] before:border-l-[10px]"
+            >
+              <div class="-mt-3 lg:ml-[35px] md:ml-[20px]">
+                <h2 class="text-[25px] font-medium mb-2">Project goal Name</h2>
+                <p
+                  class="max-w-[300px] pb-12 2xl:pb-16 leading-[40px] text-pTagColor 2xl:text-[20px] text-lg"
+                >
+                  It is a long established fact that a reader will be distracted
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="entry new before:absolute before:h-[0%] before:block before:border-r-transparent before:border-b-transparent before:border-t-transparent before:border-l-secoundary before:border-solid before:-left-[10px] md:before:-left-[17px] before:top-[13px] before:border-t-[6px] before:border-r-[0px] before:border-b-[6px] before:border-l-[10px] after:absolute after:block after:bg-secoundary after:top-[18px] after:-left-[52px] md:after:-left-[65px] after:h-[2px] after:w-[50px]"
+          >
+            <div>
+              <div class="-mt-3 lg:ml-[35px] md:ml-[20px]">
+                <h2 class="text-[25px] font-medium mb-2">Project goal Name</h2>
+                <p
+                  class="max-w-[300px] leading-[40px] text-pTagColor 2xl:text-[20px] text-lg"
+                >
+                  It is a long established fact that a reader will be distracted
+                  by the readable
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----footer-->
+    <footer
+      class="bg-no-repeat relative bg-[length:100%] w-full h-fill bg-[center_top_0rem]"
+      style="background-image: url('assets/img/Rectangle-48.png')"
+    >
+      <!---scroll-TOP-BOTTOM-->
+      <div
+        class="absolute 2xl:top-28 xl:top-24 lg:top-16 top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      >
+        <a href="#" class="top sticky">
+          <i
+            class="fas fa-chevron-up 2xl:w-[100px] w-[80px] text-canvas 2xl:text-3xl text-2xl flex justify-center items-center 2xl:h-[100px] h-[80px] bg-secoundary rounded-[50px]"
+          ></i>
+        </a>
+      </div>
+
+      <!----inner----->
+      <div
+        class="grid text-center md:text-left xl:px-0 px-10 2xl:grid-cols-[450px_250px_280px_270px_280px_minmax(900px,_1fr)_100px] container mx-auto pt-20 md:pt-40 xl:pt-48 2xl:pt-60 pb-10 sm:pb-20 xl:grid-cols-[380px_200px_230px_200px_240px_minmax(900px,_1fr)_100px] lg:grid-cols-[250px_160px_190px_160px_200px_minmax(900px,_1fr)_100px] md:grid-cols-3 lg:gap-0 gap-[30px]"
+      >
+        <div>
+          <img
+            class="inline 2xl:max-w-auto max-w-[250px] xl:-ml-[60px] md:pt-0 pt-8 md:-ml-[70px] md:mb-6 -mt-[25px]"
+            src="assets/img/image-38.png"
+            alt="footer-logo"
+          />
+          <h2 class="2xl:text-3xl text-xl font-semibold sm:pt-0 pt-3">
+            Address
+          </h2>
+          <p
+            class="2xl:max-w-[360px] md:max-w-[230px] xl:max-w-[290px] 2xl:text-xl text-base font-normal my-6 text-[#585858] leading-normal"
+          >
+            903 Victory Business Centre, Somers Road North, Portsmouth
+          </p>
+          <div class="flex justify-center md:justify-start 2xl:gap-x-6 gap-x-4">
+            <a href="#">
+              <i
+                class="fab fa-facebook text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+              ></i>
+            </a>
+
+            <a href="#">
+              <i
+                class="fab fa-twitter text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+              ></i>
+            </a>
+            <a href="#">
+              <i
+                class="fab fa-instagram text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="fab fa-linkedin text-[#585858] 2xl:text-3xl text-xl transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+              ></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h2 class="2xl:text-3xl text-xl font-semibold mb-10 sm:mt-5 md:mt-0">
+            Support
+          </h2>
+          <ul class="cursor-pointer">
+            <li>
+              <a
+                class="text-[#585858] font-normal block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#585858] font-normal block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+              >
+                Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#585858] font-normal block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+                >FTC Disclosure</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#585858] font-normal block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+                >Lorem Ipsam</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2
+            class="2xl:text-3xl text-xl font-semibold mb-10 sm:mt-10 md:-mt-0"
+          >
+            Products
+          </h2>
+          <ul class="cursor-pointer">
+            <li>
+              <a
+                class="text-[#585858] font-normal block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+                >OptinMonster</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#585858] relative font-normal inline-block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+              >
+                WPForms
+                <span
+                  class="2xl:py-2 py-1 px-4 text-white rounded-full 2xl:-bottom-[5px] -right-[55px] 2xl:-right-16 absolute text-base 2xl:text-xl bg-secoundary"
+                  >Open</span
+                >
+                <svg
+                  class="inline-block relative -right-16 2xl:-top-6"
+                  width="20"
+                  height="26"
+                  viewBox="0 0 20 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.0951 10.149C11.2784 9.61273 12.055 9.61273 12.2383 10.149L13.3132 13.2966C13.5498 13.9886 13.9484 14.6172 14.4775 15.1328C15.0065 15.6485 15.6515 16.0368 16.3612 16.2671L19.5875 17.3153C20.1375 17.494 20.1375 18.2513 19.5875 18.43L16.3596 19.4781C15.65 19.7089 15.0052 20.0976 14.4765 20.6134C13.9477 21.1293 13.5494 21.7582 13.3132 22.4503L12.2383 25.5963C12.1988 25.7137 12.1223 25.816 12.0196 25.8885C11.917 25.961 11.7935 26 11.6667 26C11.54 26 11.4165 25.961 11.3138 25.8885C11.2112 25.816 11.1346 25.7137 11.0951 25.5963L10.0202 22.4487C9.78381 21.7569 9.38544 21.1283 8.85668 20.6127C8.32793 20.0971 7.68331 19.7087 6.9739 19.4781L3.74591 18.43C3.62549 18.3915 3.52062 18.3168 3.44628 18.2168C3.37193 18.1167 3.3319 17.9962 3.3319 17.8726C3.3319 17.7491 3.37193 17.6286 3.44628 17.5285C3.52062 17.4284 3.62549 17.3538 3.74591 17.3153L6.9739 16.2671C7.68331 16.0366 8.32793 15.6481 8.85668 15.1325C9.38544 14.6169 9.78381 13.9884 10.0202 13.2966L11.0951 10.149ZM4.65748 1.86307C4.68138 1.7927 4.72741 1.73146 4.78904 1.68806C4.85066 1.64466 4.92475 1.62129 5.00077 1.62129C5.0768 1.62129 5.15089 1.64466 5.21251 1.68806C5.27414 1.73146 5.32017 1.7927 5.34407 1.86307L5.989 3.75133C6.2773 4.59309 6.9539 5.25284 7.81714 5.53397L9.7536 6.16284C9.82577 6.18614 9.88857 6.23103 9.93308 6.29113C9.97759 6.35122 10.0016 6.42346 10.0016 6.49759C10.0016 6.57172 9.97759 6.64397 9.93308 6.70406C9.88857 6.76416 9.82577 6.80904 9.7536 6.83235L7.81714 7.46122C7.39139 7.59954 7.00454 7.83264 6.68722 8.14206C6.3699 8.45148 6.13085 8.82871 5.989 9.24386L5.34407 11.1321C5.32017 11.2025 5.27414 11.2637 5.21251 11.3071C5.15089 11.3505 5.0768 11.3739 5.00077 11.3739C4.92475 11.3739 4.85066 11.3505 4.78904 11.3071C4.72741 11.2637 4.68138 11.2025 4.65748 11.1321L4.01255 9.24386C3.8707 8.82871 3.63165 8.45148 3.31433 8.14206C2.99702 7.83264 2.61016 7.59954 2.18441 7.46122L0.247952 6.83235C0.175784 6.80904 0.112982 6.76416 0.0684699 6.70406C0.023958 6.64397 0 6.57172 0 6.49759C0 6.42346 0.023958 6.35122 0.0684699 6.29113C0.112982 6.23103 0.175784 6.18614 0.247952 6.16284L2.18441 5.53397C2.61016 5.39565 2.99702 5.16255 3.31433 4.85313C3.63165 4.54371 3.8707 4.16648 4.01255 3.75133L4.65748 1.86307ZM16.4379 0.158442C16.4543 0.112172 16.4852 0.0720505 16.5261 0.0436546C16.567 0.0152587 16.616 0 16.6662 0C16.7164 0 16.7654 0.0152587 16.8063 0.0436546C16.8472 0.0720505 16.878 0.112172 16.8945 0.158442L17.3245 1.4162C17.5161 1.97845 17.9677 2.41883 18.5443 2.6057L19.8342 3.02495C19.8816 3.041 19.9228 3.07106 19.9519 3.11095C19.981 3.15085 19.9967 3.19861 19.9967 3.24758C19.9967 3.29655 19.981 3.34431 19.9519 3.38421C19.9228 3.4241 19.8816 3.45416 19.8342 3.47021L18.5443 3.88946C18.2602 3.98163 18.002 4.13714 17.7902 4.34362C17.5785 4.5501 17.419 4.80188 17.3245 5.07896L16.8945 6.33672C16.878 6.38299 16.8472 6.42311 16.8063 6.45151C16.7654 6.4799 16.7164 6.49516 16.6662 6.49516C16.616 6.49516 16.567 6.4799 16.5261 6.45151C16.4852 6.42311 16.4543 6.38299 16.4379 6.33672L16.0079 5.07896C15.9134 4.80188 15.7539 4.5501 15.5422 4.34362C15.3304 4.13714 15.0722 3.98163 14.7881 3.88946L13.4999 3.47021C13.4524 3.45416 13.4113 3.4241 13.3821 3.38421C13.353 3.34431 13.3374 3.29655 13.3374 3.24758C13.3374 3.19861 13.353 3.15085 13.3821 3.11095C13.4113 3.07106 13.4524 3.041 13.4999 3.02495L14.7897 2.6057C15.3663 2.41883 15.8179 1.97845 16.0096 1.4162L16.4379 0.160067V0.158442Z"
+                    fill="#FFC000"
+                  /></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                class="text-[#585858] font-normal block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+                >MonsterInsights</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#585858] font-normal block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+              >
+                WP Mail SMTP</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#585858] font-normal block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+              >
+                All in One SEO</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="2xl:text-3xl text-xl font-semibold mb-10 sm:mt-5 md:mt-0">
+            Information
+          </h2>
+          <ul class="cursor-pointer">
+            <li>
+              <a
+                class="text-[#585858] font-normal block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#585858] font-normal inline-block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+              >
+                Blog Info</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#585858] font-normal block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+                >Pages</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#585858] font-normal block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+              >
+                Conditon</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#585858] font-normal block mb-5 2xl:text-xl text-base transition ease-in-out hover:-translate-y-1 hover:scale-90 duration-300"
+                href="#"
+              >
+                Terms</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="2xl:text-3xl text-xl font-semibold sm:mt-5 md:mt-0">
+            Subscribe
+          </h2>
+          <p
+            class="2xl:max-w-[296px] md:max-w-[180px] xl:max-w-[230px] 2xl:text-xl text-base font-normal my-9 text-[#585858] leading-normal"
+          >
+            Subscribe to our email newsletter to receive updates.
+          </p>
+
+          <!---input--->
+          <div class="wrapper">
+            <form id="shipping-address-form">
+              <div class="field-wrapper">
+                <label
+                  class="text-[#C5C2C2] my-[18px] bg-canvas whitespace-nowrap overflow-hidden text-[16px] 2xl:text-[18px] absolute top-0 inline-block leading-[0] mx-[5px] py-[8px] px-[10px]"
+                  for="firstName5"
+                  >Email Address</label
+                >
+                <input
+                  type="text"
+                  name="firstName5"
+                  value=""
+                  id="firstName5"
+                  class="text-field-input w-full md:p-[15px] p-[17px] max-w-full"
+                />
+                <a
+                  class="md:py-[13px] py-5 absolute top-0 text-lg 2xl:text-xl rounded-md px-4 flex justify-center items-center md:inline-block text-white bg-secoundary 2xl:left-[83%] left-[84%] xl:left-[80%] md:left-[78%]"
+                  href="#"
+                >
+                  <i class="fa-solid fa-location-arrow"></i>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="text-center py-10 sm:px-0 px-[10px]">
+        <p class="text-[#585858] 2xl:text-xl text-base md:text-lg font-normal">
+          Copyright Jompha 2022 all right resarves
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
