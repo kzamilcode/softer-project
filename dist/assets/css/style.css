@@ -651,8 +651,14 @@ video {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
 }
+.mr-2 {
+  margin-right: 0.5rem;
+}
 .-mt-\[10px\] {
   margin-top: -10px;
+}
+.mb-\[20px\] {
+  margin-bottom: 20px;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -693,9 +699,6 @@ video {
 .mb-\[9px\] {
   margin-bottom: 9px;
 }
-.mb-\[20px\] {
-  margin-bottom: 20px;
-}
 .mb-\[10px\] {
   margin-bottom: 10px;
 }
@@ -734,9 +737,6 @@ video {
 }
 .mt-16 {
   margin-top: 4rem;
-}
-.mr-2 {
-  margin-right: 0.5rem;
 }
 .mt-\[45px\] {
   margin-top: 45px;
@@ -2969,6 +2969,10 @@ input[type="submit"] {
     left: 200px;
   }
 
+  .md\:left-\[76\%\] {
+    left: 76%;
+  }
+
   .md\:-top-\[40px\] {
     top: -40px;
   }
@@ -3879,6 +3883,10 @@ input[type="submit"] {
     left: 275px;
   }
 
+  .xl\:left-\[77\%\] {
+    left: 77%;
+  }
+
   .xl\:left-\[63\%\] {
     left: 63%;
   }
@@ -4324,6 +4332,10 @@ input[type="submit"] {
     left: 250px;
   }
 
+  .\32xl\:left-\[80\%\] {
+    left: 80%;
+  }
+
   .\32xl\:-right-\[20px\] {
     right: -20px;
   }
@@ -4631,9 +4643,9 @@ input[type="submit"] {
     padding-right: 2.5rem;
   }
 
-  .\32xl\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  .\32xl\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .\32xl\:py-36 {
@@ -4644,6 +4656,11 @@ input[type="submit"] {
   .\32xl\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .\32xl\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .\32xl\:py-2 {
@@ -4684,11 +4701,6 @@ input[type="submit"] {
   .\32xl\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .\32xl\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
   }
 
   .\32xl\:py-20 {
@@ -4810,10 +4822,6 @@ input[type="submit"] {
     padding-top: 8rem;
   }
 
-  .\32xl\:text-\[25px\] {
-    font-size: 25px;
-  }
-
   .\32xl\:text-\[80px\] {
     font-size: 80px;
   }
@@ -4829,6 +4837,10 @@ input[type="submit"] {
 
   .\32xl\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .\32xl\:text-\[25px\] {
+    font-size: 25px;
   }
 
   .\32xl\:text-3xl {
@@ -4849,10 +4861,6 @@ input[type="submit"] {
     font-size: 30px;
   }
 
-  .\32xl\:text-\[22px\] {
-    font-size: 22px;
-  }
-
   .\32xl\:text-\[45px\] {
     font-size: 45px;
   }
@@ -4868,6 +4876,10 @@ input[type="submit"] {
   .\32xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .\32xl\:text-\[22px\] {
+    font-size: 22px;
   }
 
   .\32xl\:leading-\[100px\] {

@@ -1,0 +1,287 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.preloader{
+  @apply overflow-y-hidden
+}
+.play::after,  .play::before{
+  @apply absolute border-[15px] border-solid border-[#C9C0FF] rounded-[50%] opacity-0 ;
+}
+  .play::after{
+    @apply -top-[10px] -left-[10px] -bottom-[10px] -right-[10px] z-[1];
+    content: "";
+    animation:  bloom1 1.5s linear infinite;
+  }
+  .play::before{
+
+    content: "";
+@apply top-[5px] left-[5px] right-[5px] bottom-[5px] -z-[1];
+    animation:  bloom2 1.5s linear infinite;
+  animation-delay: .4s;
+  }
+
+  @keyframes bloom1 {
+    0%{
+      transform: scale(.5);
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      transform: scale(1.5);
+    }
+  }
+  @keyframes bloom2 {
+    0%{
+      transform: scale(.5);
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      transform: scale(1.5);
+    }
+  }
+
+/******/
+
+.testimonial{
+@apply mx-auto flex justify-center items-center;
+  &_box{
+
+      &-top{
+        @apply flex justify-center items-center flex-col text-center;
+      }
+
+  }
+}
+
+.slick-dots {
+
+  li{
+
+      button{
+@apply 2xl:w-[90px] lg:w-[60px] lg:h-[60px] 2xl:h-[90px] w-[50px] h-[50px] overflow-hidden rounded-[50%] -indent-[9999px];
+          content:url(https://i.ibb.co/hKgs8gm/profile.jpg);
+          background: url(https://i.ibb.co/hKgs8gm/profile.jpg);
+          background-position: center !important;
+          background-size: cover !important;
+      }
+  }
+}
+
+ul.slick-dots {
+  @apply 2xl:max-w-[80%] lg:w-[70%] max-w-[51%] md:max-w-[75%] mx-auto flex-wrap flex justify-end items-center gap-x-[10px]
+
+}
+.slick-dots li p {
+  @apply lg:text-[30px] text-[20px] font-medium text-[#5E5E5E];
+
+}
+.slick-dots li.slick-active{
+@apply border-[3px] border-solid border-[#543BF5] rounded-[50%] flex justify-center items-center 2xl:w-[125px] lg:w-[85px] lg:h-[85px] 2xl:h-[125px] w-[70px] h-[70px];
+}
+.slick-dots li.slick-active button{
+  @apply 2xl:w-[105px] lg:w-[70px] lg:h-[70px] 2xl:h-[105px] w-[55px] h-[55px];
+}
+/******/
+
+.content{
+@apply px-[33px] xl:px-0;
+
+}
+.navbar{
+  @apply fixed z-[994] w-full py-[25px] transition-all;
+
+}
+.navbar.sticky{
+  @apply py-[10px] bg-[#E9E5FF] shadow-xl;
+
+}
+.navbar .content{
+  @apply flex items-center justify-between;
+}
+
+.navbar .menu-list{
+  @apply inline-flex gap-x-8;
+
+}
+
+.menu-list li a{
+  @apply xl:text-[#000] text-canvas text-[14px] md:text-[20px] font-medium xl:ml-[25px] transition-all;
+
+}
+.menu-list li a:hover{
+  @apply text-secoundary;
+}
+.icon{
+  @apply text-canvas cursor-pointer hidden
+
+}
+.icon.cancel-btn{
+  @apply absolute right-[30px] top-[20px];
+
+}
+.navbar.sticky .icon.cancel-btn{
+  @apply top-[10px];
+
+}
+@media (max-width: 1024px) {
+  .navbar.sticky {
+    padding-bottom: 20px;
+}
+  .icon{
+    @apply block h-[50px] fixed right-[30px] w-[50px] text-center leading-[60px] rounded-[50%] z-[9];
+  }
+  .icon.cancel-btn{
+    @apply hidden;
+
+  }
+  .icon.cancel-btn.show{
+    @apply block;
+
+  }
+  .icon.hide{
+    @apply hidden;
+
+  }
+  .navbar .menu-list{
+@apply fixed top-0 left-0 h-screen w-full bg-[#222222e6] block py-[40px] text-center transition-all;
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+  }
+  .navbar.sticky .menu-list{
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+  }
+  .navbar .menu-list.active{
+    clip-path: circle(75%);
+  }
+  .navbar .menu-list li{
+    @apply pt-[35px];
+  }
+}
+/***blog-css***/
+.btn1:hover span{
+  @apply w-[15px];
+}
+
+/* Thumb */
+.accordion-thumb {
+	&::before {
+@apply xl:mt-[10px] xl:h-[16px] xl:w-[16px] h-[10px] w-[10px] md:mr-[1rem] md:ml-[.5rem] inline-block align-middle absolute right-[10px] transform rotate-[45deg] transition-all ease-in-out duration-300;
+    content: '';
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+	}
+}
+
+/* Active */
+.accordion-item.is-active {
+	.accordion-thumb::before {
+    @apply transform rotate-[224deg] xl:mt-[20px] mt-[10px];
+	}
+}
+h3.accordion-thumb:hover {
+ @apply text-secoundary
+}
+h3.new.accordion-thumb:hover {
+  @apply text-[#48A400]
+ }
+/****Dropdown-css***/
+.dropdown::before {
+  @apply border-[2px] border-solid border-[#333] hover:border-secoundary absolute top-[8px] -right-[15px] z-[1000] w-[10px] h-[10px] border-t-[2px] border-t-transparent border-r-transparent transform rotate-[-45deg] transition-all duration-500 pointer-events-none;
+  content: "";
+}
+.dropdown ul{
+  @apply absolute top-1/2 md:top-0 z-[999]  md:left-[285px] lg:left-[420px] xl:left-0  transform md:-translate-x-0 translate-x-full -translate-y-[15%] md:-translate-y-0
+}
+.dropdown ul li a{
+  @apply text-black;
+}
+.dropdown-menu ul li {
+  @apply pt-0 !important;
+}
+.dropdown:hover:before {
+  @apply border-[2px] border-solid border-secoundary border-t-[2px] border-r-transparent border-r-[2px] border-t-transparent top-[14px] transform rotate-[-225deg];
+}
+
+/***about-page***/
+
+.entry {
+@apply relative max-w-[350px] overflow-visible;
+}
+
+.core{
+  @apply w-[inherit] h-[inherit];
+}
+
+/***Pricing-table***/
+
+
+.switch-wrapper [type="radio"] {
+  @apply absolute -left-[9999px];
+}
+
+.switch-wrapper
+  [type="radio"]:checked#yearly
+  + label[for="monthly"]
+  ~ .highlighter {
+    @apply transform translate-x-[103%];
+
+}
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"], .switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"] {
+  @apply text-canvas;
+}
+
+table .hide {
+  @apply hidden;
+}
+
+.loader_bg{
+  @apply fixed bg-canvas w-full h-full;
+}
+
+.loader{
+  @apply w-[100px] h-[100px] flex absolute justify-center items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+
+}
+
+.loader::before{
+  @apply h-[60px] w-[60px] lg:h-[70px] border-[#543BF5] lg:w-[70px] bg-transparent border-[25px] ;
+	content:'';
+	animation: load 1s infinite;
+}
+
+@keyframes load{
+	50%{
+		transform: rotatez(180deg);
+	}
+	100%{
+		transform: rotatez(360deg);
+	}
+}
+/******/
+.wrapper {
+  @apply max-w-[400px];
+}
+
+.field-wrapper {
+  @apply block relative outline-none max-w-full;
+}
+
+.field-wrapper.focused label {
+  @apply top-[-25px];
+  transition: all .2s linear;
+}
+.field-wrapper.another.focused label {
+  @apply 2xl:top-[-40px] top-[-30px] ;
+  transition: all .2s linear;
+}
+label {
+
+    transition: all .2s linear;
+}
+
+input[type="submit"] {
+  @apply p-[10px];
+}
