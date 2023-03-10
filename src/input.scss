@@ -72,7 +72,7 @@
 }
 
 ul.slick-dots {
-  @apply 2xl:max-w-[80%] lg:w-[70%] max-w-[51%] md:max-w-[75%] mx-auto flex-wrap flex justify-end items-center gap-x-[10px]
+  @apply lg:max-w-[80%] max-w-[51%] md:max-w-[75%] mx-auto flex-wrap flex justify-end items-center gap-x-[25px]
 
 }
 .slick-dots li p {
