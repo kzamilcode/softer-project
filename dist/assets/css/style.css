@@ -1728,6 +1728,9 @@ video {
 .pb-20 {
   padding-bottom: 5rem;
 }
+.pt-44 {
+  padding-top: 11rem;
+}
 .text-center {
   text-align: center;
 }
@@ -4353,6 +4356,10 @@ input[type="submit"] {
     top: -70px;
   }
 
+  .\32xl\:top-\[-30px\] {
+    top: -30px;
+  }
+
   .\32xl\:my-\[30px\] {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -4403,6 +4410,22 @@ input[type="submit"] {
 
   .\32xl\:mb-36 {
     margin-bottom: 9rem;
+  }
+
+  .\32xl\:mt-44 {
+    margin-top: 11rem;
+  }
+
+  .\32xl\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .\32xl\:mt-36 {
+    margin-top: 9rem;
+  }
+
+  .\32xl\:mt-32 {
+    margin-top: 8rem;
   }
 
   .\32xl\:h-\[320px\] {
