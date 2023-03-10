@@ -9,7 +9,7 @@
   @apply absolute border-[15px] border-solid border-[#C9C0FF] rounded-[50%] opacity-0 ;
 }
   .play::after{
-    @apply -top-[10px] -left-[10px] -bottom-[10px] -right-[10px] z-[1];
+    @apply -top-[5px] -left-[5px] -bottom-[5px] -right-[5px] z-[1];
     content: "";
     animation:  bloom1 1.5s linear infinite;
   }
