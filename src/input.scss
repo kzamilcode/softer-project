@@ -72,11 +72,11 @@
 }
 
 ul.slick-dots {
-  @apply lg:max-w-[80%] max-w-[51%] md:max-w-[75%] mx-auto flex-wrap flex justify-end items-center gap-x-[25px]
+  @apply lg:max-w-[80%] max-w-[51%] md:max-w-[75%] mx-auto flex-wrap flex justify-end items-center md:gap-x-[25px] gap-x-[10px];
 
 }
 .slick-dots li p {
-  @apply lg:text-[30px] text-[20px] font-medium text-[#5E5E5E];
+  @apply lg:text-[30px] text-[20px] font-medium text-[#5E5E5E] hover:text-secoundary cursor-pointer;
 
 }
 .slick-dots li.slick-active{

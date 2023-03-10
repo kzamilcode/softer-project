@@ -1719,6 +1719,9 @@ video {
 .pt-28 {
   padding-top: 7rem;
 }
+.pt-24 {
+  padding-top: 6rem;
+}
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -2142,14 +2145,16 @@ ul.slick-dots {
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
 @media (min-width: 768px) {
 
   ul.slick-dots {
     max-width: 75%;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
   }
 }
 
@@ -2160,10 +2165,15 @@ ul.slick-dots {
   }
 }
 .slick-dots li p {
+  cursor: pointer;
   font-size: 20px;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(94 94 94 / var(--tw-text-opacity));
+}
+.slick-dots li p:hover {
+  --tw-text-opacity: 1;
+  color: rgb(84 59 245 / var(--tw-text-opacity));
 }
 @media (min-width: 1024px) {
 
@@ -3311,10 +3321,6 @@ input[type="submit"] {
     padding-left: 4rem;
   }
 
-  .md\:pb-14 {
-    padding-bottom: 3.5rem;
-  }
-
   .md\:pb-20 {
     padding-bottom: 5rem;
   }
@@ -3763,10 +3769,6 @@ input[type="submit"] {
 
   .lg\:pb-10 {
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:pb-24 {
-    padding-bottom: 6rem;
   }
 
   .lg\:pt-28 {
@@ -4415,6 +4417,10 @@ input[type="submit"] {
     height: 5rem;
   }
 
+  .\32xl\:h-full {
+    height: 100%;
+  }
+
   .\32xl\:w-\[320px\] {
     width: 320px;
   }
@@ -4479,8 +4485,12 @@ input[type="submit"] {
     max-width: 1320px;
   }
 
-  .\32xl\:max-w-\[240px\] {
-    max-width: 240px;
+  .\32xl\:max-w-\[210px\] {
+    max-width: 210px;
+  }
+
+  .\32xl\:max-w-\[270px\] {
+    max-width: 270px;
   }
 
   .\32xl\:max-w-full {
@@ -4529,10 +4539,6 @@ input[type="submit"] {
 
   .\32xl\:max-w-\[790px\] {
     max-width: 790px;
-  }
-
-  .\32xl\:max-w-\[220px\] {
-    max-width: 220px;
   }
 
   .\32xl\:grid-cols-\[450px_250px_280px_270px_287px_minmax\(900px\2c _1fr\)_100px\] {
@@ -4682,6 +4688,11 @@ input[type="submit"] {
     padding-bottom: 3.5rem;
   }
 
+  .\32xl\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .\32xl\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -4792,10 +4803,6 @@ input[type="submit"] {
     padding-bottom: 3rem;
   }
 
-  .\32xl\:pb-28 {
-    padding-bottom: 7rem;
-  }
-
   .\32xl\:pt-\[100px\] {
     padding-top: 100px;
   }
@@ -4902,6 +4909,10 @@ input[type="submit"] {
 
   .\32xl\:leading-10 {
     line-height: 2.5rem;
+  }
+
+  .\32xl\:leading-\[95px\] {
+    line-height: 95px;
   }
 
   .\32xl\:leading-\[88px\] {
