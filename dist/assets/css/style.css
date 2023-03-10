@@ -558,6 +558,9 @@ video {
 .left-\[230px\] {
   left: 230px;
 }
+.left-\[81\%\] {
+  left: 81%;
+}
 .bottom-4 {
   bottom: 1rem;
 }
@@ -584,6 +587,9 @@ video {
 }
 .top-\[50px\] {
   top: 50px;
+}
+.left-12 {
+  left: 3rem;
 }
 .z-\[999999\] {
   z-index: 999999;
@@ -777,6 +783,9 @@ video {
 .ml-\[20px\] {
   margin-left: 20px;
 }
+.ml-3 {
+  margin-left: 0.75rem;
+}
 .block {
   display: block;
 }
@@ -923,6 +932,9 @@ video {
 }
 .w-\[325px\] {
   width: 325px;
+}
+.w-\[95\%\] {
+  width: 95%;
 }
 .max-w-\[80\%\] {
   max-width: 80%;
@@ -1081,6 +1093,15 @@ video {
 }
 .animate-bounce {
   animation: bounce 3s linear infinite;
+}
+@keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -2969,8 +2990,8 @@ input[type="submit"] {
     left: 200px;
   }
 
-  .md\:left-\[76\%\] {
-    left: 76%;
+  .md\:left-\[72\%\] {
+    left: 72%;
   }
 
   .md\:-top-\[40px\] {
@@ -4352,6 +4373,22 @@ input[type="submit"] {
     top: -70px;
   }
 
+  .\32xl\:top-\[700px\] {
+    top: 700px;
+  }
+
+  .\32xl\:top-\[600px\] {
+    top: 600px;
+  }
+
+  .\32xl\:top-\[0px\] {
+    top: 0px;
+  }
+
+  .\32xl\:top-\[-55px\] {
+    top: -55px;
+  }
+
   .\32xl\:my-\[30px\] {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -4612,6 +4649,10 @@ input[type="submit"] {
 
   .\32xl\:bg-\[center_top_0rem\] {
     background-position: center top 0rem;
+  }
+
+  .\32xl\:bg-\[center\] {
+    background-position: center;
   }
 
   .\32xl\:p-\[26px\] {
