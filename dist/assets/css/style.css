@@ -783,6 +783,12 @@ video {
 .ml-\[20px\] {
   margin-left: 20px;
 }
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
 .block {
   display: block;
 }
