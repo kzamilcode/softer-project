@@ -189,7 +189,7 @@ h3.new.accordion-thumb:hover {
  }
 /****Dropdown-css***/
 .dropdown::before {
-  @apply border-[2px] border-solid border-[#333] hover:border-secoundary absolute top-[8px] -right-[15px] z-[1000] w-[10px] h-[10px] border-t-[2px] border-t-transparent border-r-transparent transform rotate-[-45deg] transition-all duration-500 pointer-events-none;
+  @apply border-[2px] border-solid border-[#333] hover:border-secoundary absolute top-[8px] -right-[20px] z-[1000] w-[9px] h-[9px] border-t-[2px] border-t-transparent border-r-transparent transform rotate-[-45deg] transition-all duration-500 pointer-events-none;
   content: "";
 }
 .dropdown ul{
