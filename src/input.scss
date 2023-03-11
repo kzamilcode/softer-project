@@ -204,7 +204,12 @@ h3.new.accordion-thumb:hover {
 .dropdown:hover:before {
   @apply border-[2px] border-solid border-secoundary border-t-[2px] border-r-transparent border-r-[2px] border-t-transparent top-[14px] transform rotate-[-225deg];
 }
-
+.btn-footer:hover span {
+  width: 50px;
+}
+.newWidth{
+@apply w-[75px] !important;
+}
 /***about-page***/
 
 .entry {
