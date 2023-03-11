@@ -789,6 +789,9 @@ video {
 .mb-7 {
   margin-bottom: 1.75rem;
 }
+.ml-\[1px\] {
+  margin-left: 1px;
+}
 .block {
   display: block;
 }
@@ -3530,6 +3533,10 @@ input[type="submit"] {
 
   .lg\:ml-\[42px\] {
     margin-left: 42px;
+  }
+
+  .lg\:mt-14 {
+    margin-top: 3.5rem;
   }
 
   .lg\:inline-block {
