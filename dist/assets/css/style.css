@@ -3868,6 +3868,10 @@ input[type="submit"] {
     line-height: 80px;
   }
 
+  .lg\:leading-\[70px\] {
+    line-height: 70px;
+  }
+
   .lg\:after\:left-3::after {
     content: var(--tw-content);
     left: 0.75rem;
@@ -4044,6 +4048,10 @@ input[type="submit"] {
 
   .xl\:max-w-\[80\%\] {
     max-width: 80%;
+  }
+
+  .xl\:max-w-\[995px\] {
+    max-width: 995px;
   }
 
   .xl\:grid-cols-\[380px_200px_230px_200px_240px_minmax\(900px\2c _1fr\)_100px\] {
